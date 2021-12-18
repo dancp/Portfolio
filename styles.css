@@ -13,6 +13,7 @@ body {
     font-family: 'Open Sans', Helvetica, sans-serif;
 }
 
+/* <--- HEADER ---> */
 header {
     display: flex;
     height: 15vh;
@@ -21,9 +22,6 @@ header {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 15vh;
-}
-
-header div.logo {
 }
 
 header div.logo a {
@@ -67,6 +65,18 @@ header div.menu nav a strong {
     font-weight: 600;
 }
 
+/* <--- RESPONSIVE HEADER ---> */
+@media screen and (max-width: 1200px) {
+    header {
+        width: 90vw;
+    }
+}
+@media screen and (max-width: 992px) {}
+@media screen and (max-width: 768px) {}
+@media screen and (max-width: 576px) {}
+
+
+/* <--- MAIN ---> */
 main {
     display: flex;
     flex-direction: column;
@@ -74,8 +84,17 @@ main {
     margin: auto;
     justify-content: center;
 }
+@media screen and (max-width: 1200px) {
+    main {
 
-/* <--- BANNER ---> */
+        width: 90vw;
+    }
+}
+@media screen and (max-width: 992px) {}
+@media screen and (max-width: 768px) {}
+@media screen and (max-width: 576px) {}
+
+/* <--- MAIN - BANNER ---> */
 main section.banner {
     display: flex;
     width: 80vw;
@@ -90,13 +109,13 @@ main section.banner div.texto {
 
 main section.banner div.texto h1 {
     color: black;
-    font-size: 4rem;
+    font-size: 3.5rem;
     font-weight: 800;
 }
 
 main section.banner div.texto h2 {
     color: #BF3F3F;
-    font-size: 2rem;
+    font-size: 1.9rem;
     font-weight: 600;
 }
 
@@ -117,43 +136,57 @@ main section.banner div.texto div.button button:hover {
     cursor: pointer;
 }
 
-main section.banner div.imagem {
-}
-
 main section.banner div.imagem img {
     width: 30vw;
 }
 
-/* <--- PORTFOLIO ---> */
+/* <--- RESPONSIVE MAIN - BANNER ---> */
+@media screen and (max-width: 1200px) {
+    main section.banner {
+        width: 90vw;
+    }
+    main section.banner div.texto {
+        width: 40vw;
+    }
+}
+@media screen and (max-width: 992px) {
+    main section.banner div.texto h1 {
+        font-size: 3.1rem;
+    }
+    main section.banner div.texto h2 {
+        font-size: 1.8rem;
+    }
+}
+@media screen and (max-width: 768px) {}
+@media screen and (max-width: 576px) {}
+
+/* <--- MAIN - PORTFOLIO ---> */
 main section.portfolio {
+    border: 1px solid red;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 main section.portfolio a {
     text-decoration: none;
 }
 
-main section.portfolio a:hover {
-}
-
 main section.portfolio a div.ux {
+    border: 1px solid blue;
     background-color: #FF555530;
-    width: 38vw;
+    width: 530px;
     height: 68vh;
 }
 
 main section.portfolio a div.front-end {
+    border: 1px solid blue;
     background-color: #17B34330;
-    width: 38vw;
+    width: 530px;
     height: 68vh;
 }
 
 main section.portfolio a div.ux div.texto, main section.portfolio a div.front-end div.texto {
     padding: 5%;
-}
-
-main section.portfolio a div.ux div.texto:hover , main section.portfolio a div.front-end div.texto:hover {
 }
 
 main section.portfolio a div.ux div.texto h1, main section.portfolio a div.front-end div.texto h1 {
@@ -170,10 +203,62 @@ main section.portfolio a div.ux div.texto p, main section.portfolio a div.front-
     margin-bottom: 4%;
 }
 
+/* <--- RESPONSIVE MAIN - PORTFOLIO ---> */
+@media screen and (max-width: 1200px) {}
+@media screen and (max-width: 992px) {}
+@media screen and (max-width: 768px) {}
+@media screen and (max-width: 576px) {}
+
+/* <--- FOOTER ---> */
 footer {
     display: flex;
     flex-direction: column;
-    height: 10vh;
+    height: 20vh;
     align-items: center;
     margin-top: 15vh;
+    padding-top: 5vh;
+    border-top: 1px solid rgba(128, 128, 128, 0.200);
 }
+
+footer div.meus-contatos {
+    margin-bottom: 5px;
+}
+
+footer div.meus-contatos p {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+footer div.email {
+    margin-bottom: 10px;
+}
+
+footer div.email a {
+    font-size: 0.9rem;
+    color: #FF5555;
+    text-decoration: none;
+}
+
+footer div.social {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+    height: 50px;
+    margin-bottom: 55px;
+}
+
+footer div.social img {
+    width: 30px;
+}
+
+footer div.copyright p {
+    font-size: 0.8rem;
+}
+
+/* <--- RESPONSIVE FOOTER ---> */
+@media screen and (max-width: 1200px) {}
+@media screen and (max-width: 992px) {}
+@media screen and (max-width: 768px) {}
+@media screen and (max-width: 576px) {}

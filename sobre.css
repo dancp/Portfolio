@@ -1,0 +1,37 @@
+@import url(styles.css);
+
+main img {
+    width: 70vw;
+    margin: auto;
+    margin-bottom: 5vh;
+}
+
+main h1 {
+    font-size: 2rem;
+    margin: auto;
+    margin-bottom: 2vh;
+}
+
+main p {
+    width: 60vw;
+    margin: auto;
+    margin-bottom: 4vh;
+}
+
+main div.button {
+    margin: auto;
+}
+
+main div.button button {
+    background-color: white;
+    color: #FF5555;
+    border: 2px solid #FF5555;
+    font-weight: 800;
+    padding: 8px 25px 8px 25px;
+}
+
+main div.button button:hover {
+    background-color: #FF5555;
+    color: white;
+    cursor: pointer;
+}
