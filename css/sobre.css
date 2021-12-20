@@ -1,5 +1,9 @@
 @import url(styles.css);
 
+header {
+    margin-bottom: 5vh;
+}
+
 main img {
     width: 70vw;
     margin: auto;
