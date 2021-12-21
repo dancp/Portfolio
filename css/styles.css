@@ -13,66 +13,125 @@ body {
     font-family: 'Open Sans', Helvetica, sans-serif;
 }
 
+/* .dark-mode {
+    background-color: black;
+    color: white;
+  } */
+
 /* <--- HEADER ---> */
-header {
+header nav.navbar {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     height: 15vh;
     width: 80vw;
     margin: auto;
-    justify-content: space-between;
-    align-items: center;
     margin-bottom: 15vh;
 }
 
-header div.logo a {
-    text-decoration: none;
-}
-
-header div.logo a h1 {
+header nav.navbar a.nav-logo {
     color: #401515;
     font-size: 1.2rem;
     font-weight: 600;
+    text-decoration: none;
 }
 
-header div.logo a span {
+header nav.navbar a.nav-logo span {
     color: #FF5555;
-    font-weight: 600;
 }
 
-header div.menu nav{
+header nav.navbar ul.nav-menu {
     display: flex;
-    width: 400px;
     justify-content: space-between;
+    align-items: center;
 }
 
-header div.menu nav a {
+header nav.navbar ul.nav-menu li.nav-item {
+    margin-left: 2rem;
+    list-style: none;
+}
+
+header nav.navbar ul.nav-menu li.nav-item a.nav-link {
     color: #401515;
     font-size: .8rem;
     font-weight: 600;
+    text-transform: uppercase;
     text-decoration: none;
-    text-transform: uppercase;
-
 }
 
-header div.menu nav a:hover {
+header nav.navbar ul.nav-menu li.nav-item a.nav-link strong {
     color: #FF5555;
-    font-weight: 600;
-    text-transform: uppercase;
 }
 
-header div.menu nav a strong {
+header nav.navbar ul.nav-menu li.nav-item a.nav-link:hover {
     color: #FF5555;
-    font-weight: 600;
+}
+
+header nav.navbar div.hamburger {
+    display: none;
+}
+
+header nav.navbar div.hamburger span.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
 }
 
 /* <--- RESPONSIVE HEADER ---> */
 @media screen and (max-width: 1200px) {
-    header {
+    header nav.navbar {
         width: 90vw;
     }
 }
 @media screen and (max-width: 992px) {}
-@media screen and (max-width: 768px) {}
+
+@media screen and (max-width: 768px) {
+    header nav.navbar ul.nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    header nav.navbar ul.nav-menu.active {
+        left: 0;
+    }
+
+    header nav.navbar ul.nav-menu li.nav-item {
+        margin: 2.5rem 0;
+    }
+
+    header nav.navbar div.hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    header nav.navbar div.hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    header nav.navbar div.hamburger.active .bar:nth-child(1) {
+        -webkit-transform: translateY(8px) rotate(45deg);
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    header nav.navbar div.hamburger.active .bar:nth-child(3) {
+        -webkit-transform: translateY(-8px) rotate(-45deg);
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
+
 @media screen and (max-width: 576px) {}
 
 
@@ -162,7 +221,6 @@ main section.banner div.imagem img {
 
 /* <--- MAIN - PORTFOLIO ---> */
 main section.portfolio {
-    border: 1px solid red;
     display: flex;
     justify-content: space-evenly;
 }
@@ -172,14 +230,12 @@ main section.portfolio a {
 }
 
 main section.portfolio a div.ux {
-    border: 1px solid blue;
     background-color: #FF555530;
     width: 530px;
     height: 68vh;
 }
 
 main section.portfolio a div.front-end {
-    border: 1px solid blue;
     background-color: #17B34330;
     width: 530px;
     height: 68vh;
@@ -260,5 +316,13 @@ footer div.copyright p {
 /* <--- RESPONSIVE FOOTER ---> */
 @media screen and (max-width: 1200px) {}
 @media screen and (max-width: 992px) {}
-@media screen and (max-width: 768px) {}
+@media screen and (max-width: 768px) {
+    footer {
+        width: 90vw;
+        margin: auto;
+    }
+    footer div.copyright p {
+        text-align: center;
+    }
+}
 @media screen and (max-width: 576px) {}

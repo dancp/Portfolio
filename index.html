@@ -3,27 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <title>Daniel Pontes - UX Designer</title>
 </head>
 <body>
     <header>
-      <div class="logo">
-          <a href="index.html">
-              <h1>Daniel<span>Pontes</span></h1>
-          </a>
-      </div>  
-      <div class="menu">
-          <nav>
-              <a href="index.html"><strong>Página Inicial</strong></a>
-              <a href="ux/ux.html">UX Design</a>
-              <a href="frontend/frontend.html">Front-end</a>
-              <a href="sobre.html">Sobre mim</a>
-          </nav>
-      </div>
+        <nav class="navbar">
+            <a href="index.html" class="nav-logo">Daniel<span>Pontes</span></a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link"><strong>Página Inicial</strong></a>
+                </li>
+                <li class="nav-item">
+                    <a href="pages/ux/ux.html" class="nav-link">UX Design</a>
+                </li>
+                <li class="nav-item">
+                    <a href="pages/frontend/frontend.html" class="nav-link">Front-end</a>
+                </li>
+                <li class="nav-item">
+                    <a href="sobre.html" class="nav-link">Sobre mim</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
     </header>
     <main>
+        <!-- <button onclick="myFunction()">Toggle dark mode</button> -->
         <section class="banner">
             <div class="texto">
                 <h1>UX Designer</h1>
@@ -37,7 +47,7 @@
             </div>
         </section>
         <section class="portfolio">
-            <a href="ux/ux.html">
+            <a href="pages/ux/ux.html">
                 <div class="ux">
                     <div class="texto">
                         <h1>UX Design</h1>
@@ -46,7 +56,7 @@
                     </div>
                 </div>
             </a>
-            <a href="frontend/frontend.html">
+            <a href="pages/frontend/frontend.html">
                 <div class="front-end">
                     <div class="texto">
                         <h1>Front-end</h1>
@@ -75,4 +85,5 @@
         </div>
     </footer>
 </body>
+<script src="js/hamburger.js"></script>
 </html>
