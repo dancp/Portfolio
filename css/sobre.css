@@ -4,29 +4,34 @@ header nav.navbar {
     margin-bottom: 5vh;
 }
 
-main img {
+main section.sobre {
+    display: flex;
+    flex-direction: column;
+}
+
+main section.sobre img {
     width: 70vw;
     margin: auto;
     margin-bottom: 5vh;
 }
 
-main h1 {
+main section.sobre h1 {
     font-size: 2rem;
     margin: auto;
     margin-bottom: 3vh;
 }
 
-main p {
+main section.sobre p {
     width: 60vw;
     margin: auto;
     margin-bottom: 5vh;
 }
 
-main div.button {
+main section.sobre div.button {
     margin: auto;
 }
 
-main div.button button {
+main section.sobre div.button button {
     background-color: white;
     color: #FF5555;
     border: 2px solid #FF5555;
@@ -34,34 +39,46 @@ main div.button button {
     padding: 8px 25px 8px 25px;
 }
 
-main div.button button:hover {
+main section.sobre div.button button:hover {
     background-color: #FF5555;
     color: white;
     cursor: pointer;
 }
 
+@media screen and (min-width: 1366px) {
+    main section.sobre img {
+        width: 55vw;
+    }
+    main section.sobre p {
+        width: 45vw;
+    }
+}
 @media screen and (max-width: 1200px) {}
 @media screen and (max-width: 992px) {
-    main img {
+    main section.sobre img {
         width: 70vw;
     }
-    main p {
+    main section.sobre p {
         width: 70vw;
     }
 }
 @media screen and (max-width: 768px) {
-    main img {
+    main section.sobre img {
         width: 80vw;
     }
-    main p {
+    main section.sobre p {
         width: 80vw;
     }
 }
 @media screen and (max-width: 576px) {
-    main img {
+    main section.sobre img {
         width: 90vw;
     }
-    main p {
+    main section.sobre p {
         width: 90vw;
     }
+}
+
+footer {
+    margin-top: 10vh;
 }

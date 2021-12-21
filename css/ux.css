@@ -13,6 +13,7 @@ main div.title {
 main div.title h1 {
     font-size: 3.5rem;
     font-weight: 800;
+    margin-bottom: 1.5rem;
 }
 
 main div.title h2 {
@@ -20,7 +21,12 @@ main div.title h2 {
     text-align: center;
 }
 
-/* CARD 1 - PRINCIPAL */
+/* UX CARDS  */
+main div.ux-cards {
+    display: flex;
+    flex-direction: column;
+}
+
 main div.card1 {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
@@ -47,8 +53,8 @@ main div.card1-txt h3 {
     font-weight: 700;
 }
 
-/* MAIN CARDS */
-main div.main-cards {
+/* UI CARDS */
+main div.ui-cards {
     display: flex;
     flex-wrap: wrap;
     width: 70vw;
@@ -56,7 +62,6 @@ main div.main-cards {
     justify-content: space-between;
 }
 
-/* CARD 2 */
 main div.card2 {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
@@ -81,7 +86,7 @@ main div.card2-txt h3 {
     font-weight: 700;
 }
 
-/* CARD 3 */
+/* CARD 3
 main div.card3 {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
@@ -105,4 +110,4 @@ main div.card3-txt {
 
 main div.card3-txt h3 {
     font-weight: 700;
-}
+} */

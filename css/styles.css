@@ -14,11 +14,6 @@ body {
     background-color: rgb(255, 255, 255);
 }
 
-/* .dark-mode {
-    background-color: black;
-    color: white;
-  } */
-
 /* <--- HEADER ---> */
 header nav.navbar {
     display: flex;
@@ -83,6 +78,12 @@ header nav.navbar div.hamburger span.bar {
 }
 
 /* <--- RESPONSIVE HEADER ---> */
+@media screen and (min-width: 1366px) {
+    header nav.navbar {
+        width: 60vw;
+    }
+}
+
 @media screen and (max-width: 1200px) {
     header nav.navbar {
         width: 90vw;
@@ -93,6 +94,7 @@ header nav.navbar div.hamburger span.bar {
 @media screen and (max-width: 768px) {
     header nav.navbar {
         height: 10vh;
+        margin-bottom: 5vh;
     }
 
     header nav.navbar a.nav-logo {
@@ -143,134 +145,29 @@ header nav.navbar div.hamburger span.bar {
     }
 }
 
-@media screen and (max-width: 576px) {}
+@media screen and (max-width: 576px) {
+    header nav.navbar {
+        margin-bottom: 3vh;
+    }
+}
 
 
 /* <--- MAIN ---> */
 main {
-    display: flex;
-    flex-direction: column;
     width: 80vw;
     margin: auto;
-    justify-content: center;
+}
+
+@media screen and (min-width: 1366px) {
+    main {
+        width: 60vw;
+    }
 }
 @media screen and (max-width: 1200px) {
     main {
         width: 90vw;
     }
 }
-@media screen and (max-width: 992px) {}
-@media screen and (max-width: 768px) {}
-@media screen and (max-width: 576px) {}
-
-/* <--- MAIN - BANNER ---> */
-main section.banner {
-    display: flex;
-    width: 80vw;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 15vw;
-}
-
-main section.banner div.texto {
-    width: 30vw;
-}
-
-main section.banner div.texto h1 {
-    color: black;
-    font-size: 3.5rem;
-    font-weight: 800;
-}
-
-main section.banner div.texto h2 {
-    color: #BF3F3F;
-    font-size: 1.9rem;
-    font-weight: 600;
-}
-
-main section.banner div.texto div.button {
-    margin-top: 8%
-}
-main section.banner div.texto div.button button {
-    background-color: white;
-    color: #FF5555;
-    border: 2px solid #FF5555;
-    font-weight: 800;
-    padding: 8px 25px 8px 25px;
-}
-
-main section.banner div.texto div.button button:hover {
-    background-color: #FF5555;
-    color: white;
-    cursor: pointer;
-}
-
-main section.banner div.imagem img {
-    width: 30vw;
-}
-
-/* <--- RESPONSIVE MAIN - BANNER ---> */
-@media screen and (max-width: 1200px) {
-    main section.banner {
-        width: 90vw;
-    }
-    main section.banner div.texto {
-        width: 40vw;
-    }
-}
-@media screen and (max-width: 992px) {
-    main section.banner div.texto h1 {
-        font-size: 3.1rem;
-    }
-    main section.banner div.texto h2 {
-        font-size: 1.8rem;
-    }
-}
-@media screen and (max-width: 768px) {}
-@media screen and (max-width: 576px) {}
-
-/* <--- MAIN - PORTFOLIO ---> */
-main section.portfolio {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-main section.portfolio a {
-    text-decoration: none;
-}
-
-main section.portfolio a div.ux {
-    background-color: #FF555530;
-    width: 530px;
-    height: 68vh;
-}
-
-main section.portfolio a div.front-end {
-    background-color: #17B34330;
-    width: 530px;
-    height: 68vh;
-}
-
-main section.portfolio a div.ux div.texto, main section.portfolio a div.front-end div.texto {
-    padding: 5%;
-}
-
-main section.portfolio a div.ux div.texto h1, main section.portfolio a div.front-end div.texto h1 {
-    color: black;
-    font-size: 2rem;
-    text-transform: uppercase;
-    margin-bottom: 2%;
-}
-
-main section.portfolio a div.ux div.texto p, main section.portfolio a div.front-end div.texto p {
-    color: black;
-    font-size: 1rem;
-    line-height: 1.5;
-    margin-bottom: 4%;
-}
-
-/* <--- RESPONSIVE MAIN - PORTFOLIO ---> */
-@media screen and (max-width: 1200px) {}
 @media screen and (max-width: 992px) {}
 @media screen and (max-width: 768px) {}
 @media screen and (max-width: 576px) {}
@@ -332,4 +229,12 @@ footer div.copyright p {
         width: 80vw;
     }
 }
-@media screen and (max-width: 576px) {}
+@media screen and (max-width: 576px) {
+    footer {
+        margin-top: 10vh;
+    }
+    footer div.copyright p {
+        width: 70vw;
+        margin-bottom: 2vh;
+    }
+}
