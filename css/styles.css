@@ -11,6 +11,7 @@
 
 body {
     font-family: 'Open Sans', Helvetica, sans-serif;
+    background-color: rgb(255, 255, 255);
 }
 
 /* .dark-mode {
@@ -90,26 +91,36 @@ header nav.navbar div.hamburger span.bar {
 @media screen and (max-width: 992px) {}
 
 @media screen and (max-width: 768px) {
+    header nav.navbar {
+        height: 10vh;
+    }
+
+    header nav.navbar a.nav-logo {
+        font-size: 1.5rem;
+    }
+
     header nav.navbar ul.nav-menu {
         position: fixed;
-        left: -100%;
-        top: 5rem;
+        top: -100%;
         flex-direction: column;
         background-color: #fff;
         width: 100%;
-        border-radius: 10px;
         text-align: center;
         transition: 0.3s;
-        box-shadow:
-            0 10px 27px rgba(0, 0, 0, 0.05);
+        box-shadow: 0 30px 27px rgba(0, 0, 0, 0.05);
     }
 
     header nav.navbar ul.nav-menu.active {
         left: 0;
+        top: 10vh;
     }
 
     header nav.navbar ul.nav-menu li.nav-item {
-        margin: 2.5rem 0;
+        margin: 2rem 0;
+    }
+
+    header nav.navbar ul.nav-menu li.nav-item a.nav-link {
+        font-size: 1.5rem;
     }
 
     header nav.navbar div.hamburger {
@@ -145,7 +156,6 @@ main {
 }
 @media screen and (max-width: 1200px) {
     main {
-
         width: 90vw;
     }
 }
@@ -277,7 +287,7 @@ footer {
 }
 
 footer div.meus-contatos {
-    margin-bottom: 5px;
+    margin-bottom: 0.5rem;
 }
 
 footer div.meus-contatos p {
@@ -286,7 +296,7 @@ footer div.meus-contatos p {
 }
 
 footer div.email {
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
 }
 
 footer div.email a {
@@ -302,7 +312,7 @@ footer div.social {
     justify-content: space-between;
     width: 300px;
     height: 50px;
-    margin-bottom: 55px;
+    margin-bottom: 2rem;
 }
 
 footer div.social img {
@@ -317,12 +327,9 @@ footer div.copyright p {
 @media screen and (max-width: 1200px) {}
 @media screen and (max-width: 992px) {}
 @media screen and (max-width: 768px) {
-    footer {
-        width: 90vw;
-        margin: auto;
-    }
     footer div.copyright p {
         text-align: center;
+        width: 80vw;
     }
 }
 @media screen and (max-width: 576px) {}

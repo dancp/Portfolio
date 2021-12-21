@@ -1,6 +1,6 @@
 @import url(styles.css);
 
-header {
+header nav.navbar {
     margin-bottom: 5vh;
 }
 
@@ -13,13 +13,13 @@ main img {
 main h1 {
     font-size: 2rem;
     margin: auto;
-    margin-bottom: 2vh;
+    margin-bottom: 3vh;
 }
 
 main p {
     width: 60vw;
     margin: auto;
-    margin-bottom: 4vh;
+    margin-bottom: 5vh;
 }
 
 main div.button {
@@ -38,4 +38,30 @@ main div.button button:hover {
     background-color: #FF5555;
     color: white;
     cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {}
+@media screen and (max-width: 992px) {
+    main img {
+        width: 70vw;
+    }
+    main p {
+        width: 70vw;
+    }
+}
+@media screen and (max-width: 768px) {
+    main img {
+        width: 80vw;
+    }
+    main p {
+        width: 80vw;
+    }
+}
+@media screen and (max-width: 576px) {
+    main img {
+        width: 90vw;
+    }
+    main p {
+        width: 90vw;
+    }
 }
