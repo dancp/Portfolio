@@ -113,10 +113,10 @@ main div.ux-cards div.card-txt h3 {
         font-size: .7rem;
     }
     main div.ux-cards div.card {
-        margin-bottom: 3vh;
+        margin-bottom: 5vh;
     }
     main div.ux-cards div.card2 {
-        margin-bottom: 8vh;
+        margin-bottom: 10vh;
     }
 }
 
@@ -131,7 +131,6 @@ main div.ui-cards {
 main div.ui-cards div.card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    margin-bottom: 50px;
 }
 
 main div.ui-cards div.card1 {
@@ -167,11 +166,9 @@ main div.card-txt h3 {
         flex-direction: column;
         align-items: center;
     }
-    main div.ui-cards div.card {
-        margin-bottom: 5vh;
-    }
     main div.ui-cards div.card1 {
         margin-right: 0;
+        margin-bottom: 10vh;
     }
     main div.ui-cards div.card-img img {
         width: 450px;
@@ -180,8 +177,8 @@ main div.card-txt h3 {
 @media screen and (max-width: 992px) {}
 @media screen and (max-width: 768px) {}
 @media screen and (max-width: 576px) {
-    main div.ui-cards div.card {
-        margin-bottom: 3vh;
+    main div.ui-cards div.card1 {
+        margin-bottom: 5vh;
     }
     main div.ui-cards div.card-img img {
         width: 320px;
