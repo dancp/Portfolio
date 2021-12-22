@@ -23,7 +23,6 @@ main div.title h2 {
 }
 
 /* <--- RESPONSIVE TITLE ---> */
-@media screen and (max-width: 992px) {}
 @media screen and (max-width: 768px) {
     main div.title {
         width: 60vw;
