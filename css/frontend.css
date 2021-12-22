@@ -109,6 +109,6 @@ main div.card-txt h3 {
 
 @media screen and (max-width: 576px) {
     main div.card-img img {
-        width: 400px;
+        width: 320px;
     }
 }
