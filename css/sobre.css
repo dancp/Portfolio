@@ -22,6 +22,8 @@ main section.sobre h1 {
 }
 
 main section.sobre p {
+    text-indent: 20px;
+    text-align: justify;
     width: 60vw;
     margin: auto;
     margin-bottom: 5vh;

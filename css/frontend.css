@@ -1,5 +1,6 @@
 @import url(styles.css);
 
+/* <--- TITLE ---> */
 main div.title {
     display: flex;
     flex-direction: column;
@@ -21,13 +22,33 @@ main div.title h2 {
     text-align: center;
 }
 
-/* CARD 1 - PRINCIPAL */
+/* <--- RESPONSIVE TITLE ---> */
+@media screen and (max-width: 992px) {}
+@media screen and (max-width: 768px) {
+    main div.title {
+        width: 60vw;
+        margin-bottom: 10vh;
+    }
+    main div.title h1 {
+        font-size: 2.8rem;
+    }
+    
+    main div.title h2 {
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 576px) {
+    main div.title {
+        width: 80vw;
+    }
+}
+
+/* <--- CARDS ---> */
 main div.cards {
     display: flex;
     flex-wrap: wrap;
-    width: 70vw;
     margin: auto;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 main div.card {
@@ -36,14 +57,16 @@ main div.card {
     margin-bottom: 50px;
 }
 
+main div.card1, main div.card3 {
+    margin-right: 50px;
+}
+
 main div.card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
-main div.card-img {
-    background-color: crimson;
-    width: 30vw;
-    height: 400px;
+main div.card-img img {
+    width: 500px;
 }
 
 main div.card-txt {
@@ -53,4 +76,40 @@ main div.card-txt {
 
 main div.card-txt h3 {
     font-weight: 700;
+}
+
+/* <--- RESPONSIVE CARDS ---> */
+@media screen and (min-width: 1600px) {}
+@media screen and (min-width: 1366px) {}
+@media screen and (max-width: 1366px) {
+    main div.card-img img {
+        width: 440px;
+    }
+}
+@media screen and (max-width: 1200px) {
+    main div.card-img img {
+        width: 420px;
+    }
+}
+@media screen and (max-width: 992px) {
+    main div.cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    main div.card-img img {
+        width: 500px;
+    }
+    main div.card1, main div.card3 {
+        margin-right: 0;
+    }
+    main div.card4 {
+        margin-bottom: 0;
+    }
+}
+@media screen and (max-width: 768px) {}
+
+@media screen and (max-width: 576px) {
+    main div.card-img img {
+        width: 400px;
+    }
 }

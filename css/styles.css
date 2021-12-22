@@ -158,11 +158,8 @@ main {
     margin: auto;
 }
 
-@media screen and (min-width: 1366px) {
-    main {
-        width: 60vw;
-    }
-}
+@media screen and (min-width: 1600px) {}
+@media screen and (min-width: 1366px) {}
 @media screen and (max-width: 1200px) {
     main {
         width: 90vw;
