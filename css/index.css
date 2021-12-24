@@ -1,176 +1,171 @@
-@import url(styles.css);
+@import url(main.css);
 
 /* <--- BANNER ---> */
-main section.banner {
+section.banner {
     display: flex;
-    width: 80vw;
     margin: auto;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 15vw;
+    margin-bottom: 10vw;
 }
 
-main section.banner div.texto {
-    width: 30vw;
+section.banner .banner-txt {
+    width: 35vw;
 }
 
-main section.banner div.texto h1 {
+section.banner .banner-txt h1 {
     color: black;
     font-size: 3.5rem;
     font-weight: 800;
 }
 
-main section.banner div.texto h2 {
+section.banner .banner-txt h2 {
     color: #BF3F3F;
     font-size: 1.9rem;
     font-weight: 600;
 }
 
-main section.banner div.texto div.button {
+section.banner .banner-txt .button {
     margin-top: 8%
 }
-main section.banner div.texto div.button button {
+section.banner .banner-txt .button button {
     background-color: white;
     color: #FF5555;
     border: 2px solid #FF5555;
     font-weight: 800;
     padding: 8px 25px 8px 25px;
+    transition-duration: .3s;
 }
 
-main section.banner div.texto div.button button:hover {
+section.banner .banner-txt .button button:hover {
     background-color: #FF5555;
     color: white;
     cursor: pointer;
 }
 
-main section.banner div.imagem img {
+section.banner .banner-img img {
     width: 30vw;
 }
 
 /* <--- RESPONSIVE BANNER ---> */
-@media screen and (min-width: 1366px) {
-    main section.banner {
-        width: 60vw;
-    }
-    main section.banner div.texto {
+@media screen and (min-width: 1440px) {
+    section.banner .banner-txt {
         width: 25vw;
     }
-    main section.banner div.texto h1 {
+    section.banner .banner-txt h1 {
         font-size: 3.5rem;
     }
-    main section.banner div.texto h2 {
+    section.banner .banner-txt h2 {
         font-size: 2rem;
     }
-    main section.banner div.imagem img {
+    section.banner .banner-img img {
         width: 25vw;
     }
 }
 
 @media screen and (max-width: 1200px) {
-    main section.banner {
-        width: 90vw;
-    }
-    main section.banner div.texto {
+    section.banner .banner-txt {
         width: 40vw;
     }
 }
 
 @media screen and (max-width: 992px) {
-    main section.banner div.texto {
+    section.banner .banner-txt {
         width: 50vw;
     }
-    main section.banner div.texto h1 {
+    section.banner .banner-txt h1 {
         font-size: 3.1rem;
     }
-    main section.banner div.texto h2 {
+    section.banner .banner-txt h2 {
         font-size: 1.8rem;
     }
-    main section.banner div.imagem img {
+    section.banner .banner-img img {
         width: 35vw;
     }
 }
 
 @media screen and (max-width: 768px) {
-    main section.banner {
+    section.banner {
         flex-direction: column;
     }
-    main section.banner div.texto div.button {
-        margin-bottom: 4vh;
-    }
-    main section.banner div.texto {
+    section.banner .banner-txt {
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 70vw;
     }
-    main section.banner div.texto h1 {
+    section.banner .banner-txt h1 {
         font-size: 2.7rem;
     }
-    main section.banner div.texto h2 {
+    section.banner .banner-txt h2 {
         font-size: 1.3rem;
         text-align: center;
     }
-    main section.banner div.imagem img {
+    section.banner .banner-txt .button {
+        margin-bottom: 4vh;
+    }
+    section.banner .banner-img img {
         width: 60vw;
     }
 }
 
 @media screen and (max-width: 576px) {
-    main section.banner div.texto h1 {
+    section.banner .banner-txt {
+        width: 90vw;
+    }
+    section.banner .banner-txt h1 {
         font-size: 2.4rem;
     }
-    main section.banner div.texto h2 {
+    section.banner .banner-txt h2 {
         font-size: 1.1rem;
-    }
-    main section.banner div.texto {
-        width: 90vw;
     }
 }
 
 /* <--- PORTFOLIO ---> */
-main section.portfolio {
-    display: flex;
-    justify-content: center;
+section.portfolio {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2%;
 }
 
-main section.portfolio a {
+section.portfolio a {
     text-decoration: none;
 }
 
-main section.portfolio a div.ux {
-    background-color: #FF555530;
-    width: 530px;
-    height: 650px;
-    margin-right: 15px;
+section.portfolio .card {
+    width: 100%;
+    height: 60vh;
     transition-duration: 0.5s;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
 }
-
-main section.portfolio a div.front-end {
-    background-color: #17B34330;
-    width: 530px;
-    height: 650px;
-    margin-left: 15px;
-    transition-duration: 0.5s;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
-}
-
-main section.portfolio a div.ux:hover, main section.portfolio a div.front-end:hover {
+section.portfolio .card:hover {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-main section.portfolio a div.ux div.texto, main section.portfolio a div.front-end div.texto {
+section.portfolio .ux {
+    background-image: url(../assets/ux/ux.webp);
+    background-size: contain;
+    background-color: #ff559c30;
+}
+
+section.portfolio .frontend {
+    background-image: url(../assets/frontend/frontend.webp);
+    background-size: contain;
+    background-color: #1760b330;
+}
+
+section.portfolio .txt {
     padding: 5%;
 }
 
-main section.portfolio a div.ux div.texto h1, main section.portfolio a div.front-end div.texto h1 {
+section.portfolio .txt h1 {
     color: black;
     font-size: 2rem;
     text-transform: uppercase;
     margin-bottom: 2%;
 }
 
-main section.portfolio a div.ux div.texto p, main section.portfolio a div.front-end div.texto p {
+section.portfolio .txt p {
     color: black;
     font-size: 1rem;
     line-height: 1.5;
@@ -178,62 +173,14 @@ main section.portfolio a div.ux div.texto p, main section.portfolio a div.front-
 }
 
 /* <--- RESPONSIVE PORTFOLIO ---> */
-@media screen and (max-width: 1200px) {
-    main section.portfolio a div.ux {
-        width: 460px;
-        height: 580px;
-        margin-right: 10px;
-    }
-    main section.portfolio a div.front-end {
-        width: 460px;
-        height: 580px;
-        margin-left: 10px;
-    }
-}
-@media screen and (max-width: 992px) {
-    main section.portfolio {
-        flex-direction: column;
-        align-items: center;
-    }
-    main section.portfolio a div.ux {
-        width: 530px;
-        height: 650px;
-        margin-right: 0;
-        margin-bottom: 20px;
-    }
-    main section.portfolio a div.front-end {
-        width: 530px;
-        height: 650px;
-        margin-left: 0;
-    }
-}
 @media screen and (max-width: 768px) {
-    main section.portfolio {
-        flex-direction: column;
-        align-items: center;
-    }
-    main section.portfolio a div.ux {
-        width: 460px;
-        height: 580px;
-        margin-right: 0;
-        margin-bottom: 20px;
-    }
-    main section.portfolio a div.front-end {
-        width: 460px;
-        height: 580px;
-        margin-left: 0;
+    section.portfolio {
+        grid-template-columns: 1fr;
     }
 }
+
 @media screen and (max-width: 576px) {
-    main section.portfolio a div.ux {
-        width: 300px;
-        height: 420px;
-        margin-right: 0;
-        margin-bottom: 20px;
-    }
-    main section.portfolio a div.front-end {
-        width: 300px;
-        height: 420px;
-        margin-left: 0;
+    section.portfolio .card {
+        height: 50vh;
     }
 }

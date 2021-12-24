@@ -1,6 +1,6 @@
-@import url(styles.css);
+@import url(main.css);
 
-main div.title {
+section.title {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -10,183 +10,128 @@ main div.title {
     margin-bottom: 15vh;
 }
 
-main div.title h1 {
+section.title h1 {
     font-size: 3.5rem;
     font-weight: 800;
     margin-bottom: 1.5rem;
 }
 
-main div.title h2 {
+section.title h2 {
     font-size: 1rem;
     text-align: center;
 }
 
 /* <--- RESPONSIVE TITLE ---> */
 @media screen and (max-width: 768px) {
-    main div.title {
+    section.title {
         width: 60vw;
         margin-bottom: 10vh;
     }
-    main div.title h1 {
+    section.title h1 {
         font-size: 2.8rem;
     }
     
-    main div.title h2 {
+    section.title h2 {
         font-size: 1rem;
     }
 }
 @media screen and (max-width: 576px) {
-    main div.title {
+    section.title {
         width: 80vw;
     }
 }
 
 /* <--- UX CARDS --->  */
-main div.ux-cards {
-    display: flex;
-    flex-direction: column;
-}
-
-main div.ux-cards div.card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    margin: auto;
-    margin-bottom: 10vh;
-}
-
-main div.ux-cards div.card2 {
+section.ux-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 10vh;
+    margin: 0 auto;
     margin-bottom: 15vh;
 }
 
-main div.ux-cards div.card:hover {
+section.ux-cards .card {
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition-duration: 0.25s;
+}
+
+section.ux-cards .card:hover {
+    transform: scale(1.015);
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
-main div.ux-cards a {
+section.ux-cards .card .card-img a {
     text-decoration: none;
     color: black;
 }
 
-main div.ux-cards div.card-img img {
-    width: 1085px;
+section.ux-cards .card .card-img img {
+    width: 100%;
+    transition-duration: 0.25s;
 }
 
-main div.ux-cards div.card-txt {
-    line-height: 2.5;
-    padding: 2px 16px;
-}
-
-main div.ux-cards div.card-txt h3 {
-    font-weight: 700;
-}
-
-/* <--- RESPONSIVE UX CARDS --->  */
-@media screen and (min-width: 1600px) {}
-@media screen and (max-width: 1360px) {
-    main div.ux-cards div.card-img img {
-        width: 955px;
-    }
-}
-@media screen and (max-width: 1200px) {
-    main div.ux-cards div.card-img img {
-        width: 885px;
-    }
-}
-@media screen and (max-width: 992px) {
-    main div.ux-cards div.card-img img {
-        width: 685px;
-    }
-}
-@media screen and (max-width: 768px) {
-    main div.ux-cards div.card-img img {
-        width: 515px;
-    }
-}
-@media screen and (max-width: 576px) {
-    main div.ux-cards div.card-img img {
-        width: 320px;
-    }
-    main div.ux-cards div.card-txt h3 {
-        font-size: 1rem;
-    }
-    main div.ux-cards div.card-txt p {
-        font-size: .7rem;
-    }
-    main div.ux-cards div.card {
-        margin-bottom: 5vh;
-    }
-    main div.ux-cards div.card2 {
-        margin-bottom: 10vh;
-    }
-}
-
-/* <--- UI CARDS --->  */
-main div.ui-cards {
-    display: flex;
-    flex-wrap: wrap;
-    margin: auto;
-    justify-content: center;
-}
-
-main div.ui-cards div.card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-}
-
-main div.ui-cards div.card1 {
-    margin-right: 100px;
-}
-
-main div.ui-cards div.card:hover {
+section.ux-cards .card .card-img img:hover {
+    transform: scale(1.015);
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
-main div.ui-cards div.card-img img {
-    width: 490px;
-}
-
-main div.ui-cards div.card-txt {
+section.ux-cards .card .card-txt {
     line-height: 2.5;
     padding: 2px 16px;
 }
 
-main div.card-txt h3 {
+section.ux-cards .card .card-txt h3 {
+    font-weight: 700;
+}
+
+/* <--- UI CARDS --->  */
+section.ui-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 8vw;
+    margin: 0 auto;
+}
+
+section.ui-cards .card {
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition-duration: 0.25s;
+}
+
+section.ui-cards .card:hover {
+    transform: scale(1.015);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+section.ui-cards .card .card-img img {
+    width: 100%;
+    transition-duration: 0.25s;
+}
+
+section.ui-cards .card .card-img img:hover {
+    transform: scale(1.015);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+section.ui-cards .card .card-txt {
+    line-height: 2.5;
+    padding: 2px 16px;
+}
+
+section.ui-cards .card .card-txt h3 {
     font-weight: 700;
 }
 
 /* <--- RESPONSIVE UI CARDS --->  */
-@media screen and (min-width: 1600px) {}
-@media screen and (max-width: 1360px) {
-    main div.ui-cards div.card-img img {
-        width: 400px;
-    }
-}
 @media screen and (max-width: 1200px) {
-    main div.ui-cards {
-        flex-direction: column;
-        align-items: center;
-    }
-    main div.ui-cards div.card1 {
-        margin-right: 0;
-        margin-bottom: 10vh;
-    }
-    main div.ui-cards div.card-img img {
-        width: 450px;
+    section.ui-cards {
+        column-gap: 4vw;
     }
 }
-@media screen and (max-width: 992px) {}
-@media screen and (max-width: 768px) {}
-@media screen and (max-width: 576px) {
-    main div.ui-cards div.card1 {
-        margin-bottom: 5vh;
-    }
-    main div.ui-cards div.card-img img {
-        width: 320px;
-    }
-    main div.ui-cards div.card-txt h3 {
-        font-size: 1rem;
-    }
-    main div.ui-cards div.card-txt p {
-        font-size: .7rem;
+@media screen and (max-width: 768px) {
+        section.ui-cards {
+        grid-template-columns: 1fr;
+        row-gap: 10vh;
     }
 }

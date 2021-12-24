@@ -21,7 +21,7 @@ header nav.navbar {
     align-items: center;
     height: 15vh;
     width: 80vw;
-    margin: auto;
+    margin: 0 auto;
     margin-bottom: 15vh;
 }
 
@@ -53,6 +53,7 @@ header nav.navbar ul.nav-menu li.nav-item a.nav-link {
     font-weight: 600;
     text-transform: uppercase;
     text-decoration: none;
+    transition-duration: .3s;
 }
 
 header nav.navbar ul.nav-menu li.nav-item a.nav-link strong {
@@ -63,22 +64,27 @@ header nav.navbar ul.nav-menu li.nav-item a.nav-link:hover {
     color: #FF5555;
 }
 
-header nav.navbar div.hamburger {
+header nav.navbar .hamburger {
     display: none;
 }
 
-header nav.navbar div.hamburger span.bar {
+header nav.navbar .hamburger span.bar {
     display: block;
     width: 25px;
     height: 3px;
     margin: 5px auto;
-    -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     background-color: #101010;
 }
 
 /* <--- RESPONSIVE HEADER ---> */
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1440px) {
+    header nav.navbar {
+        width: 70vw;
+    }
+}
+
+@media screen and (min-width: 1600px) {
     header nav.navbar {
         width: 60vw;
     }
@@ -89,7 +95,6 @@ header nav.navbar div.hamburger span.bar {
         width: 90vw;
     }
 }
-@media screen and (max-width: 992px) {}
 
 @media screen and (max-width: 768px) {
     header nav.navbar {
@@ -119,28 +124,28 @@ header nav.navbar div.hamburger span.bar {
 
     header nav.navbar ul.nav-menu li.nav-item {
         margin: 2rem 0;
+
     }
 
     header nav.navbar ul.nav-menu li.nav-item a.nav-link {
         font-size: 1.5rem;
+        padding: 20px 50px;
     }
 
-    header nav.navbar div.hamburger {
+    header nav.navbar .hamburger {
         display: block;
         cursor: pointer;
     }
 
-    header nav.navbar div.hamburger.active .bar:nth-child(2) {
+    header nav.navbar .hamburger.active .bar:nth-child(2) {
         opacity: 0;
     }
 
-    header nav.navbar div.hamburger.active .bar:nth-child(1) {
-        -webkit-transform: translateY(8px) rotate(45deg);
+    header nav.navbar .hamburger.active .bar:nth-child(1) {
         transform: translateY(8px) rotate(45deg);
     }
 
-    header nav.navbar div.hamburger.active .bar:nth-child(3) {
-        -webkit-transform: translateY(-8px) rotate(-45deg);
+    header nav.navbar .hamburger.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
 }
@@ -151,87 +156,102 @@ header nav.navbar div.hamburger span.bar {
     }
 }
 
-
 /* <--- MAIN ---> */
 main {
     width: 80vw;
-    margin: auto;
+    margin: 0 auto;
 }
 
-@media screen and (min-width: 1600px) {}
-@media screen and (min-width: 1366px) {}
+@media screen and (min-width: 1440px) {
+    main {
+        width: 70vw;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    main {
+        width: 60vw;
+    }
+}
+
 @media screen and (max-width: 1200px) {
     main {
         width: 90vw;
     }
 }
-@media screen and (max-width: 992px) {}
-@media screen and (max-width: 768px) {}
-@media screen and (max-width: 576px) {}
 
-/* <--- FOOTER ---> */
-footer {
+/* <--- section.footer ---> */
+section.footer {
     display: flex;
     flex-direction: column;
-    height: 20vh;
     align-items: center;
+    height: auto;
+    width: 80vw;
+    margin: 0 auto;
     margin-top: 15vh;
     padding-top: 5vh;
     border-top: 1px solid rgba(128, 128, 128, 0.200);
 }
 
-footer div.meus-contatos {
-    margin-bottom: 0.5rem;
+section.footer .title {
+    margin-bottom: 1rem;
 }
 
-footer div.meus-contatos p {
+section.footer .title h1 {
     font-size: 1.2rem;
     font-weight: 700;
 }
 
-footer div.email {
+section.footer .email {
     margin-bottom: 1rem;
 }
 
-footer div.email a {
+section.footer .email a {
     font-size: 0.9rem;
     color: #FF5555;
     text-decoration: none;
 }
 
-footer div.social {
-
+section.footer .social {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 300px;
     height: 50px;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
-footer div.social img {
+section.footer .social img {
     width: 30px;
 }
 
-footer div.copyright p {
+section.footer .copyright p {
     font-size: 0.8rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
 }
 
-/* <--- RESPONSIVE FOOTER ---> */
-@media screen and (max-width: 1200px) {}
-@media screen and (max-width: 992px) {}
-@media screen and (max-width: 768px) {
-    footer div.copyright p {
-        text-align: center;
-        width: 80vw;
+/* <--- RESPONSIVE section.footer ---> */
+@media screen and (min-width: 1440px) {
+    section.footer {
+        width: 70vw;
     }
 }
-@media screen and (max-width: 576px) {
-    footer {
-        margin-top: 10vh;
+
+@media screen and (min-width: 1600px) {
+    section.footer {
+        width: 60vw;
     }
-    footer div.copyright p {
-        width: 70vw;
-        margin-bottom: 2vh;
+}
+
+@media screen and (max-width: 1200px) {
+    section.footer {
+        width: 90vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    section.footer {
+        margin-top: 10vh;
     }
 }
