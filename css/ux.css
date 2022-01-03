@@ -1,25 +1,5 @@
 @import url(main.css);
-
-section.title {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    width: 40vw;
-    margin-bottom: 15vh;
-}
-
-section.title h1 {
-    font-size: 3.5rem;
-    font-weight: 800;
-    margin-bottom: 1.5rem;
-}
-
-section.title h2 {
-    font-size: 1rem;
-    text-align: center;
-}
+@import url(title.css);
 
 /* <--- RESPONSIVE TITLE ---> */
 @media screen and (max-width: 768px) {
@@ -52,13 +32,9 @@ section.ux-cards {
 
 section.ux-cards .card {
     width: 100%;
+    border-radius: 5px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition-duration: 0.25s;
-}
-
-section.ux-cards .card:hover {
-    transform: scale(1.015);
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
 section.ux-cards .card .card-img a {
@@ -68,11 +44,12 @@ section.ux-cards .card .card-img a {
 
 section.ux-cards .card .card-img img {
     width: 100%;
+    border-radius: 5px 5px 0 0;
     transition-duration: 0.25s;
 }
 
 section.ux-cards .card .card-img img:hover {
-    transform: scale(1.015);
+    transform: translateY(-5px);
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
@@ -95,22 +72,19 @@ section.ui-cards {
 
 section.ui-cards .card {
     width: 100%;
+    border-radius: 5px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition-duration: 0.25s;
 }
 
-section.ui-cards .card:hover {
-    transform: scale(1.015);
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-
 section.ui-cards .card .card-img img {
     width: 100%;
-    transition-duration: 0.25s;
+    border-radius: 5px 5px 0 0;
+    transition-duration: 0.4s;
 }
 
 section.ui-cards .card .card-img img:hover {
-    transform: scale(1.015);
+    transform: translateY(-5px);
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
