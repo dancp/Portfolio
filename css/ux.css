@@ -23,7 +23,9 @@
 
 /* <--- UX CARDS --->  */
 section.ux-cards {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
     row-gap: 10vh;
     margin: 0 auto;
@@ -33,8 +35,11 @@ section.ux-cards {
 section.ux-cards .card {
     width: 100%;
     border-radius: 5px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition-duration: 0.25s;
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    -webkit-transition-duration: 0.25s;
+         -o-transition-duration: 0.25s;
+            transition-duration: 0.25s;
 }
 
 section.ux-cards .card .card-img a {
@@ -45,12 +50,17 @@ section.ux-cards .card .card-img a {
 section.ux-cards .card .card-img img {
     width: 100%;
     border-radius: 5px 5px 0 0;
-    transition-duration: 0.25s;
+    -webkit-transition-duration: 0.25s;
+         -o-transition-duration: 0.25s;
+            transition-duration: 0.25s;
 }
 
 section.ux-cards .card .card-img img:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    -webkit-transform: translateY(-5px);
+        -ms-transform: translateY(-5px);
+            transform: translateY(-5px);
+    -webkit-box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
 section.ux-cards .card .card-txt {
@@ -64,28 +74,40 @@ section.ux-cards .card .card-txt h3 {
 
 /* <--- UI CARDS --->  */
 section.ui-cards {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 1fr 8vw 1fr;
     grid-template-columns: 1fr 1fr;
-    column-gap: 8vw;
+    -webkit-column-gap: 8vw;
+       -moz-column-gap: 8vw;
+            column-gap: 8vw;
     margin: 0 auto;
 }
 
 section.ui-cards .card {
     width: 100%;
     border-radius: 5px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition-duration: 0.25s;
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    -webkit-transition-duration: 0.25s;
+         -o-transition-duration: 0.25s;
+            transition-duration: 0.25s;
 }
 
 section.ui-cards .card .card-img img {
     width: 100%;
     border-radius: 5px 5px 0 0;
-    transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s;
+         -o-transition-duration: 0.4s;
+            transition-duration: 0.4s;
 }
 
 section.ui-cards .card .card-img img:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    -webkit-transform: translateY(-5px);
+        -ms-transform: translateY(-5px);
+            transform: translateY(-5px);
+    -webkit-box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
 section.ui-cards .card .card-txt {
@@ -100,11 +122,14 @@ section.ui-cards .card .card-txt h3 {
 /* <--- RESPONSIVE UI CARDS --->  */
 @media screen and (max-width: 1200px) {
     section.ui-cards {
-        column-gap: 4vw;
+        -webkit-column-gap: 4vw;
+           -moz-column-gap: 4vw;
+                column-gap: 4vw;
     }
 }
 @media screen and (max-width: 768px) {
         section.ui-cards {
+        -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
         row-gap: 10vh;
     }

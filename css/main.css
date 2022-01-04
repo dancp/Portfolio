@@ -22,9 +22,15 @@ body {
 
 /* <--- HEADER ---> */
 header nav.navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     height: 15vh;
     width: 80vw;
     margin: 0 auto;
@@ -43,9 +49,15 @@ header nav.navbar a.nav-logo span {
 }
 
 header nav.navbar ul.nav-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 header nav.navbar ul.nav-menu li.nav-item {
@@ -59,7 +71,9 @@ header nav.navbar ul.nav-menu li.nav-item a.nav-link {
     font-weight: 600;
     text-transform: uppercase;
     text-decoration: none;
-    transition-duration: .3s;
+    -webkit-transition-duration: .3s;
+         -o-transition-duration: .3s;
+            transition-duration: .3s;
 }
 
 header nav.navbar ul.nav-menu li.nav-item a.nav-link strong {
@@ -79,6 +93,8 @@ header nav.navbar .hamburger span.bar {
     width: 25px;
     height: 3px;
     margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     background-color: #101010;
 }
@@ -115,12 +131,18 @@ header nav.navbar .hamburger span.bar {
     header nav.navbar ul.nav-menu {
         position: fixed;
         top: -100%;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         background-color: #fff;
         width: 100%;
         text-align: center;
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
         transition: 0.3s;
-        box-shadow: 0 30px 27px rgba(0, 0, 0, 0.05);
+        -webkit-box-shadow: 0 30px 27px rgba(0, 0, 0, 0.05);
+                box-shadow: 0 30px 27px rgba(0, 0, 0, 0.05);
     }
 
     header nav.navbar ul.nav-menu.active {
@@ -147,11 +169,15 @@ header nav.navbar .hamburger span.bar {
     }
 
     header nav.navbar .hamburger.active .bar:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
+        -webkit-transform: translateY(8px) rotate(45deg);
+            -ms-transform: translateY(8px) rotate(45deg);
+                transform: translateY(8px) rotate(45deg);
     }
 
     header nav.navbar .hamburger.active .bar:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
+        -webkit-transform: translateY(-8px) rotate(-45deg);
+            -ms-transform: translateY(-8px) rotate(-45deg);
+                transform: translateY(-8px) rotate(-45deg);
     }
 }
 
@@ -193,9 +219,16 @@ main {
 
 /* <--- section.footer ---> */
 section.footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     height: auto;
     width: 80vw;
     margin: 0 auto;
@@ -224,9 +257,15 @@ section.footer .email a {
 }
 
 section.footer .social {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     width: 300px;
     height: 50px;
     margin-bottom: 1rem;
