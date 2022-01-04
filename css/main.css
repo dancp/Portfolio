@@ -130,7 +130,6 @@ header nav.navbar .hamburger span.bar {
 
     header nav.navbar ul.nav-menu li.nav-item {
         margin: 2rem 0;
-
     }
 
     header nav.navbar ul.nav-menu li.nav-item a.nav-link {
@@ -159,6 +158,12 @@ header nav.navbar .hamburger span.bar {
 @media screen and (max-width: 576px) {
     header nav.navbar {
         margin-bottom: 3vh;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-height: 576px) {
+    header nav.navbar ul.nav-menu li.nav-item {
+        margin: 1.3rem 0;
     }
 }
 
