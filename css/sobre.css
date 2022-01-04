@@ -18,6 +18,8 @@ section.sobre img {
     width: 70vw;
     margin: auto;
     margin-bottom: 5vh;
+    border-radius: 5px;
+    box-shadow: rgb(255, 255, 255) 10px -10px 0px -3px, var(--cor2) 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px, var(--cor1) 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px, var(--cor2) 30px -30px, rgb(255, 255, 255) 40px -40px 0px -3px, var(--cor1) 40px -40px;
 }
 
 section.sobre h1 {
@@ -40,8 +42,8 @@ section.sobre .button {
 
 section.sobre .button button {
     background-color: white;
-    color: #FF5555;
-    border: 2px solid #FF5555;
+    color: var(--cor1);
+    border: 2px solid var(--cor1);
     font-weight: 800;
     padding: 8px 25px 8px 25px;
     border-radius: 5px;
@@ -51,7 +53,7 @@ section.sobre .button button {
 }
 
 section.sobre .button button:hover {
-    background-color: #FF5555;
+    background-color: var(--cor1);
     color: #ffffffee;
     cursor: pointer;
 }
@@ -76,6 +78,7 @@ section.sobre .button button:hover {
 @media screen and (max-width: 768px) {
     section.sobre img {
         width: 80vw;
+        box-shadow: rgb(255, 255, 255) 10px -10px 0px -3px, var(--cor2) 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px, var(--cor1) 20px -20px;
     }
     section.sobre p {
         width: 80vw;
@@ -84,9 +87,23 @@ section.sobre .button button:hover {
 @media screen and (max-width: 576px) {
     section.sobre img {
         width: 90vw;
+        box-shadow: rgb(255, 255, 255) 10px -10px 0px -3px, var(--cor1) 10px -10px;
     }
     section.sobre p {
         width: 90vw;
+    }
+}
+
+@media only screen and (max-height: 412px) and (max-width: 992px) and (orientation: landscape) {
+    section.sobre img {
+        margin-top: 1.5rem;
+        box-shadow: rgb(255, 255, 255) 10px -10px 0px -3px, var(--cor2) 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px, var(--cor1) 20px -20px;
+    }
+}
+
+@media only screen and (max-height: 412px) and (max-width: 768px) and (orientation: landscape) {
+    section.sobre img {
+        margin-top: 1rem;
     }
 }
 

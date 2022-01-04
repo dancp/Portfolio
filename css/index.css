@@ -26,13 +26,25 @@ section.banner .banner-txt h1 {
 }
 
 section.banner .banner-txt h2 {
-    color: #5D5D5D;
+    color: gray;
     font-size: 1.9rem;
     font-weight: 300;
 }
 
+section.banner .banner-txt h2 strong {
+    font-weight: 500;
+}
+
+section.banner .banner-txt h2 strong:nth-of-type(1) {
+    color: var(--cor1);
+}
+
+section.banner .banner-txt h2 strong:nth-of-type(2) {
+    color: var(--cor2);
+}
+
 section.banner .banner-txt .button {
-    margin-top: 8%
+    margin-top: 3rem;
 }
 section.banner .banner-txt .button button {
     background-color: white;
@@ -54,6 +66,10 @@ section.banner .banner-txt .button button:hover {
 
 section.banner .banner-img img {
     width: 30vw;
+    border-radius: 5px;
+    /* box-shadow: rgb(255, 255, 255) -10px -10px 0px -3px, rgb(31, 193, 27) -10px -10px, rgb(255, 255, 255) -20px -20px 0px -3px, rgb(255, 217, 19) -20px -20px, rgb(255, 255, 255) -30px -30px 0px -3px, rgb(255, 156, 85) -30px -30px, rgb(255, 255, 255) -40px -40px 0px -3px, rgb(255, 85, 85) -40px -40px; */
+    /* box-shadow: rgb(255, 255, 255) -10px -10px 0px -3px, #7eb0e1 -10px -10px, rgb(255, 255, 255) -20px -20px 0px -3px, #9e9ee8 -20px -20px, rgb(255, 255, 255) -30px -30px 0px -3px, #f9629e -30px -30px, rgb(255, 255, 255) -40px -40px 0px -3px, #ff5555 -40px -40px; */
+    box-shadow: rgb(255, 255, 255) -10px -10px 0px -3px, var(--cor2) -10px -10px, rgb(255, 255, 255) -20px -20px 0px -3px, var(--cor1) -20px -20px, rgb(255, 255, 255) -30px -30px 0px -3px, var(--cor2) -30px -30px, rgb(255, 255, 255) -40px -40px 0px -3px, var(--cor1) -40px -40px;
 }
 
 /* <--- RESPONSIVE BANNER ---> */
@@ -80,7 +96,7 @@ section.banner .banner-img img {
 
 @media screen and (max-width: 992px) {
     section.banner .banner-txt {
-        width: 50vw;
+        width: 45vw;
     }
     section.banner .banner-txt h1 {
         font-size: 3.1rem;
@@ -121,10 +137,11 @@ section.banner .banner-img img {
         text-align: center;
     }
     section.banner .banner-txt .button {
-        margin-bottom: 4vh;
+        margin-bottom: 5rem;
     }
     section.banner .banner-img img {
         width: 60vw;
+        box-shadow: rgb(255, 255, 255) -10px -10px 0px -3px, var(--cor2) -10px -10px, rgb(255, 255, 255) -20px -20px 0px -3px, var(--cor1) -20px -20px;
     }
 }
 
@@ -137,6 +154,10 @@ section.banner .banner-img img {
     }
     section.banner .banner-txt h2 {
         font-size: 1.1rem;
+    }
+    section.banner .banner-img img {
+        width: 60vw;
+        box-shadow: rgb(255, 255, 255) -10px -10px 0px -3px, var(--cor1) -10px -10px;
     }
 }
 

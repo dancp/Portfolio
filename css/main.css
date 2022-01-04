@@ -4,6 +4,7 @@
 
 :root {
     --cor1: #FF5555;
+    --cor2: #7eb0e1;
 }
 
 * {
@@ -38,7 +39,7 @@ header nav.navbar {
 }
 
 header nav.navbar a.nav-logo {
-    color: #401515;
+    color: black;
     font-size: 1.2rem;
     font-weight: 600;
     text-decoration: none;
@@ -66,7 +67,7 @@ header nav.navbar ul.nav-menu li.nav-item {
 }
 
 header nav.navbar ul.nav-menu li.nav-item a.nav-link {
-    color: #000000;
+    color: black;
     font-size: .8rem;
     font-weight: 600;
     text-transform: uppercase;
@@ -96,7 +97,7 @@ header nav.navbar .hamburger span.bar {
     -webkit-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    background-color: #101010;
+    background-color: black;
 }
 
 /* <--- RESPONSIVE HEADER ---> */
@@ -187,7 +188,7 @@ header nav.navbar .hamburger span.bar {
     }
 }
 
-@media screen and (orientation: landscape) and (max-height: 576px) {
+@media only screen and (max-height: 412px) and (max-width: 768px) and (orientation: landscape) {
     header nav.navbar ul.nav-menu li.nav-item {
         margin: 1rem 0;
     }
