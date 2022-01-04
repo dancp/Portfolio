@@ -67,9 +67,7 @@ section.banner .banner-txt .button button:hover {
 section.banner .banner-img img {
     width: 30vw;
     border-radius: 5px;
-    /* box-shadow: rgb(255, 255, 255) -10px -10px 0px -3px, rgb(31, 193, 27) -10px -10px, rgb(255, 255, 255) -20px -20px 0px -3px, rgb(255, 217, 19) -20px -20px, rgb(255, 255, 255) -30px -30px 0px -3px, rgb(255, 156, 85) -30px -30px, rgb(255, 255, 255) -40px -40px 0px -3px, rgb(255, 85, 85) -40px -40px; */
-    box-shadow: rgb(255, 255, 255) -10px -10px 0px -3px, #7eb0e1 -10px -10px, rgb(255, 255, 255) -20px -20px 0px -3px, #9e9ee8 -20px -20px, rgb(255, 255, 255) -30px -30px 0px -3px, #f9629e -30px -30px, rgb(255, 255, 255) -40px -40px 0px -3px, #ff5555 -40px -40px;
-    /* box-shadow: rgb(255, 255, 255) -10px -10px 0px -3px, var(--cor2) -10px -10px, rgb(255, 255, 255) -20px -20px 0px -3px, var(--cor1) -20px -20px, rgb(255, 255, 255) -30px -30px 0px -3px, var(--cor2) -30px -30px, rgb(255, 255, 255) -40px -40px 0px -3px, var(--cor1) -40px -40px; */
+    box-shadow: rgb(255, 255, 255) -10px -10px 0px -3px, var(--cor2) -10px -10px, rgb(255, 255, 255) -20px -20px 0px -3px, #9e9ee8 -20px -20px, rgb(255, 255, 255) -30px -30px 0px -3px, #f9629e -30px -30px, rgb(255, 255, 255) -40px -40px 0px -3px, var(--cor1) -40px -40px;
 }
 
 /* <--- RESPONSIVE BANNER ---> */
