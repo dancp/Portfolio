@@ -1,9 +1,5 @@
 @import url(main.css);
 
-header nav.navbar {
-    margin-bottom: 5vh;
-}
-
 section.sobre {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -16,32 +12,39 @@ section.sobre {
 
 section.sobre img {
     width: 70vw;
-    margin: auto;
+    margin: 0 auto;
     margin-bottom: 5vh;
     border-radius: 5px;
-    box-shadow: rgb(255, 255, 255) 10px -10px 0px -3px, var(--cor2) 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px, #9e9ee8 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px, #f9629e 30px -30px, rgb(255, 255, 255) 40px -40px 0px -3px, var(--cor1) 40px -40px;
+    -webkit-box-shadow: var(--dom) 10px -10px 0px -3px, var(--cor2) 10px -10px, var(--dom) 20px -20px 0px -3px, #9e9ee8 20px -20px, var(--dom) 30px -30px 0px -3px, #f9629e 30px -30px, var(--dom) 40px -40px 0px -3px, var(--cor1) 40px -40px;
+            box-shadow: var(--dom) 10px -10px 0px -3px, var(--cor2) 10px -10px, var(--dom) 20px -20px 0px -3px, #9e9ee8 20px -20px, var(--dom) 30px -30px 0px -3px, #f9629e 30px -30px, var(--dom) 40px -40px 0px -3px, var(--cor1) 40px -40px;
 }
 
 section.sobre h1 {
+    color: var(--sec);
     font-size: 2rem;
-    margin: auto;
-    margin-bottom: 3vh;
-}
-
-section.sobre p {
-    text-indent: 20px;
-    text-align: justify;
-    width: 60vw;
-    margin: auto;
+    margin: 0 auto;
     margin-bottom: 5vh;
 }
 
+section.sobre p {
+    color: var(--sec);
+    text-indent: 20px;
+    text-align: justify;
+    width: 60vw;
+    margin: 0 auto;
+    margin-bottom: 5vh;
+}
+
+section.sobre p:nth-of-type(3) {
+    margin-bottom: 10vh;
+}
+
 section.sobre .button {
-    margin: auto;
+    margin: 0 auto;
 }
 
 section.sobre .button button {
-    background-color: white;
+    background-color: var(--dom);
     color: var(--cor1);
     border: 2px solid var(--cor1);
     font-weight: 800;
@@ -54,7 +57,7 @@ section.sobre .button button {
 
 section.sobre .button button:hover {
     background-color: var(--cor1);
-    color: #ffffffee;
+    color: var(--dom);
     cursor: pointer;
 }
 
@@ -78,7 +81,8 @@ section.sobre .button button:hover {
 @media screen and (max-width: 768px) {
     section.sobre img {
         width: 80vw;
-        box-shadow: rgb(255, 255, 255) 10px -10px 0px -3px, var(--cor2) 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px, var(--cor1) 20px -20px;
+        -webkit-box-shadow: var(--dom) 10px -10px 0px -3px, var(--cor1) 10px -10px, var(--dom) 20px -20px 0px -3px, var(--cor2) 20px -20px;
+                box-shadow: var(--dom) 10px -10px 0px -3px, var(--cor1) 10px -10px, var(--dom) 20px -20px 0px -3px, var(--cor2) 20px -20px;
     }
     section.sobre p {
         width: 80vw;
@@ -87,7 +91,8 @@ section.sobre .button button:hover {
 @media screen and (max-width: 576px) {
     section.sobre img {
         width: 90vw;
-        box-shadow: rgb(255, 255, 255) 10px -10px 0px -3px, var(--cor1) 10px -10px;
+        -webkit-box-shadow: var(--dom) 10px -10px 0px -3px, var(--cor1) 10px -10px;
+                box-shadow: var(--dom) 10px -10px 0px -3px, var(--cor1) 10px -10px;
     }
     section.sobre p {
         width: 90vw;
@@ -96,17 +101,7 @@ section.sobre .button button:hover {
 
 @media only screen and (max-height: 412px) and (max-width: 992px) and (orientation: landscape) {
     section.sobre img {
-        margin-top: 1.5rem;
-        box-shadow: rgb(255, 255, 255) 10px -10px 0px -3px, var(--cor2) 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px, var(--cor1) 20px -20px;
+        -webkit-box-shadow: var(--dom) 10px -10px 0px -3px, var(--cor1) 10px -10px, var(--dom) 20px -20px 0px -3px, var(--cor2) 20px -20px;
+                box-shadow: var(--dom) 10px -10px 0px -3px, var(--cor1) 10px -10px, var(--dom) 20px -20px 0px -3px, var(--cor2) 20px -20px;
     }
-}
-
-@media only screen and (max-height: 412px) and (max-width: 768px) and (orientation: landscape) {
-    section.sobre img {
-        margin-top: 1rem;
-    }
-}
-
-section.footer {
-    margin-top: 10vh;
 }

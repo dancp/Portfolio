@@ -1,26 +1,6 @@
 @import url(main.css);
 @import url(title.css);
 
-/* <--- RESPONSIVE TITLE ---> */
-@media screen and (max-width: 768px) {
-    section.title {
-        width: 60vw;
-        margin-bottom: 10vh;
-    }
-    section.title h1 {
-        font-size: 2.8rem;
-    }
-    
-    section.title h2 {
-        font-size: 1rem;
-    }
-}
-@media screen and (max-width: 576px) {
-    section.title {
-        width: 80vw;
-    }
-}
-
 /* <--- CARDS ---> */
 section.portfolio {
     display: -ms-grid;
@@ -32,14 +12,13 @@ section.portfolio {
 }
 
 section.portfolio .card {
+    background-color: hsla(0, 100%, 100%, 0.07);
     width: 100%;
     border-radius: 5px;
-    -webkit-box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    -webkit-transition-duration: 0.25s;
-         -o-transition-duration: 0.25s;
-            transition-duration: 0.25s;
-    
+    box-shadow:
+    0px 2px 2px 0px hsla(0,0%,0%,0.14), 
+    0px 3px 1px -2px hsla(0,0%,0%,0.12), 
+    0px 1px 5px 0px hsla(0,0%,0%,0.2);
 }
 
 section.portfolio .card .card-img img {
@@ -54,8 +33,6 @@ section.portfolio .card .card-img img:hover {
     -webkit-transform: translateY(-5px);
         -ms-transform: translateY(-5px);
             transform: translateY(-5px);
-    -webkit-box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
 section.portfolio .card .card-txt {
@@ -63,16 +40,14 @@ section.portfolio .card .card-txt {
     padding: 2px 16px;
 }
 
-section.portfolio .card .card-txt a {
-    text-decoration: none;
-}
-
 section.portfolio .card .card-txt h3 {
+    color: var(--sec);
     font-size: 1rem;
     font-weight: 700;
 }
 
 section.portfolio .card .card-txt p {
+    color: var(--sec);
     font-size: 1rem;
 }
 
