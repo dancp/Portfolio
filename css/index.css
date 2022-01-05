@@ -68,8 +68,10 @@ section.banner .banner-txt .button button:hover {
 section.banner .banner-img img {
     width: 30vw;
     border-radius: 5px;
-    -webkit-box-shadow: var(--dom) -10px -10px 0px -3px, var(--cor2) -10px -10px, var(--dom) -20px -20px 0px -3px, #9e9ee8 -20px -20px, var(--dom) -30px -30px 0px -3px, #f9629e -30px -30px, var(--dom) -40px -40px 0px -3px, var(--cor1) -40px -40px;
-            box-shadow: var(--dom) -10px -10px 0px -3px, var(--cor2) -10px -10px, var(--dom) -20px -20px 0px -3px, #9e9ee8 -20px -20px, var(--dom) -30px -30px 0px -3px, #f9629e -30px -30px, var(--dom) -40px -40px 0px -3px, var(--cor1) -40px -40px;
+    /* -webkit-box-shadow: var(--dom) -10px -10px 0px -3px, var(--cor2) -10px -10px, var(--dom) -20px -20px 0px -3px, #9e9ee8 -20px -20px, var(--dom) -30px -30px 0px -3px, #f9629e -30px -30px, var(--dom) -40px -40px 0px -3px, var(--cor1) -40px -40px;
+            box-shadow: var(--dom) -10px -10px 0px -3px, var(--cor2) -10px -10px, var(--dom) -20px -20px 0px -3px, #9e9ee8 -20px -20px, var(--dom) -30px -30px 0px -3px, #f9629e -30px -30px, var(--dom) -40px -40px 0px -3px, var(--cor1) -40px -40px; */
+    -webkit-box-shadow: var(--dom) -10px -10px 0px -3px, var(--cor1) -10px -10px, var(--dom) -20px -20px 0px -3px, var(--cor2) -20px -20px;
+    box-shadow: var(--dom) -10px -10px 0px -3px, var(--cor1) -10px -10px, var(--dom) -20px -20px 0px -3px, var(--cor2) -20px -20px;
 }
 
 /* <--- RESPONSIVE BANNER ---> */
@@ -115,6 +117,7 @@ section.banner .banner-img img {
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
                 flex-direction: column;
+        margin-bottom: 10vh;
     }
     section.banner .banner-txt {
         display: -webkit-box;
@@ -141,8 +144,8 @@ section.banner .banner-img img {
     }
     section.banner .banner-img img {
         width: 60vw;
-        -webkit-box-shadow: var(--dom) -10px -10px 0px -3px, var(--cor1) -10px -10px, var(--dom) -20px -20px 0px -3px, var(--cor2) -20px -20px;
-                box-shadow: var(--dom) -10px -10px 0px -3px, var(--cor1) -10px -10px, var(--dom) -20px -20px 0px -3px, var(--cor2) -20px -20px;
+        /* -webkit-box-shadow: var(--dom) -10px -10px 0px -3px, var(--cor1) -10px -10px, var(--dom) -20px -20px 0px -3px, var(--cor2) -20px -20px;
+                box-shadow: var(--dom) -10px -10px 0px -3px, var(--cor1) -10px -10px, var(--dom) -20px -20px 0px -3px, var(--cor2) -20px -20px; */
     }
 }
 
@@ -158,17 +161,17 @@ section.banner .banner-img img {
     }
     section.banner .banner-img img {
         width: 60vw;
-        -webkit-box-shadow: var(--dom) -10px -10px 0px -3px, var(--cor1) -10px -10px;
-                box-shadow: var(--dom) -10px -10px 0px -3px, var(--cor1) -10px -10px;
+        /* -webkit-box-shadow: var(--dom) -10px -10px 0px -3px, var(--cor1) -10px -10px;
+                box-shadow: var(--dom) -10px -10px 0px -3px, var(--cor1) -10px -10px; */
     }
 }
 
-@media only screen and (max-height: 412px) and (max-width: 992px) and (orientation: landscape) {
+/* @media only screen and (max-height: 412px) and (max-width: 992px) and (orientation: landscape) {
     section.banner .banner-img img {
         -webkit-box-shadow: var(--dom) -10px -10px 0px -3px, var(--cor1) -10px -10px, var(--dom) -20px -20px 0px -3px, var(--cor2) -20px -20px;
                 box-shadow: var(--dom) -10px -10px 0px -3px, var(--cor1) -10px -10px, var(--dom) -20px -20px 0px -3px, var(--cor2) -20px -20px;
     }
-}
+} */
 
 /* <--- PORTFOLIO ---> */
 section.portfolio {
@@ -185,33 +188,30 @@ section.portfolio a {
 
 section.portfolio .card {
     width: 100%;
-    height: 60vh;
     border-radius: 5px;
     -webkit-transition-duration: 0.15s;
          -o-transition-duration: 0.15s;
             transition-duration: 0.15s;
     box-shadow:
-    0px 2px 2px 0px hsla(0,0%,0%,0.14), 
-    0px 3px 1px -2px hsla(0,0%,0%,0.12), 
+    0px 2px 2px 0px hsla(0,0%,0%,0.14),
+    0px 3px 1px -2px hsla(0,0%,0%,0.12),
     0px 1px 5px 0px hsla(0,0%,0%,0.2);
 }
 section.portfolio .card:hover {
-            box-shadow:
-            0px 6px 10px 0px hsla(0,0%,0%,0.14), 
-            0px 1px 18px 0px hsla(0,0%,0%,0.12), 
-            0px 3px 5px -1px hsla(0,0%,0%,0.2);
+    box-shadow:
+    0px 6px 10px 0px hsla(0,0%,0%,0.14),
+    0px 1px 18px 0px hsla(0,0%,0%,0.12),
+    0px 3px 5px -1px hsla(0,0%,0%,0.2);
 }
 
 section.portfolio .ux {
-    background-image: url(../assets/ux/ux.webp);
-    background-size: contain;
-    background-color: rgba(var(--cor1-rgb), 0.2);
+    background-color: hsla(0, 100%, 100%, 0.07);
+    /* background-image: url(../assets/ux/ux.png); */
 }
 
 section.portfolio .frontend {
-    background-image: url(../assets/frontend/frontend.webp);
-    background-size: contain;
-    background-color: rgba(var(--cor2-rgb), 0.2);
+    background-color: hsla(0, 100%, 100%, 0.07);
+    /* background-image: url(../assets/frontend/frontend.png); */
 }
 
 section.portfolio .txt {
@@ -222,14 +222,32 @@ section.portfolio .txt h1 {
     color: var(--sec);
     font-size: 2rem;
     text-transform: uppercase;
-    margin-bottom: 2%;
+    margin-bottom: 1rem;
 }
 
 section.portfolio .txt p {
     color: var(--sec);
     font-size: 1rem;
     line-height: 1.5;
-    margin-bottom: 4%;
+    margin-bottom: 1.5rem;
+}
+
+section.portfolio .txt p.veja-mais {
+    margin-bottom: 0;
+}
+
+section.portfolio .txt p strong {
+    color: var(--sec);
+    text-decoration: underline;
+    -webkit-text-decoration-color: var(--cor1);
+            text-decoration-color: var(--cor1);
+    text-decoration-thickness: 0.2rem;
+    padding: 0 2px;
+}
+
+section.portfolio .txt p strong:hover {
+    color: var(--dom);
+    background-color: var(--cor1);
 }
 
 /* <--- RESPONSIVE PORTFOLIO ---> */
@@ -237,11 +255,6 @@ section.portfolio .txt p {
     section.portfolio {
         -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    }
-}
-
-@media screen and (max-width: 576px) {
-    section.portfolio .card {
-        height: 50vh;
+        gap: 30px;
     }
 }

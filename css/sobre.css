@@ -15,8 +15,10 @@ section.sobre img {
     margin: 0 auto;
     margin-bottom: 5vh;
     border-radius: 5px;
-    -webkit-box-shadow: var(--dom) 10px -10px 0px -3px, var(--cor2) 10px -10px, var(--dom) 20px -20px 0px -3px, #9e9ee8 20px -20px, var(--dom) 30px -30px 0px -3px, #f9629e 30px -30px, var(--dom) 40px -40px 0px -3px, var(--cor1) 40px -40px;
-            box-shadow: var(--dom) 10px -10px 0px -3px, var(--cor2) 10px -10px, var(--dom) 20px -20px 0px -3px, #9e9ee8 20px -20px, var(--dom) 30px -30px 0px -3px, #f9629e 30px -30px, var(--dom) 40px -40px 0px -3px, var(--cor1) 40px -40px;
+    /* -webkit-box-shadow: var(--dom) 10px -10px 0px -3px, var(--cor2) 10px -10px, var(--dom) 20px -20px 0px -3px, #9e9ee8 20px -20px, var(--dom) 30px -30px 0px -3px, #f9629e 30px -30px, var(--dom) 40px -40px 0px -3px, var(--cor1) 40px -40px;
+            box-shadow: var(--dom) 10px -10px 0px -3px, var(--cor2) 10px -10px, var(--dom) 20px -20px 0px -3px, #9e9ee8 20px -20px, var(--dom) 30px -30px 0px -3px, #f9629e 30px -30px, var(--dom) 40px -40px 0px -3px, var(--cor1) 40px -40px; */
+    -webkit-box-shadow: var(--dom) 10px -10px 0px -3px, var(--cor1) 10px -10px, var(--dom) 20px -20px 0px -3px, var(--cor2) 20px -20px;
+        box-shadow: var(--dom) 10px -10px 0px -3px, var(--cor1) 10px -10px, var(--dom) 20px -20px 0px -3px, var(--cor2) 20px -20px;
 }
 
 section.sobre h1 {
@@ -81,8 +83,8 @@ section.sobre .button button:hover {
 @media screen and (max-width: 768px) {
     section.sobre img {
         width: 80vw;
-        -webkit-box-shadow: var(--dom) 10px -10px 0px -3px, var(--cor1) 10px -10px, var(--dom) 20px -20px 0px -3px, var(--cor2) 20px -20px;
-                box-shadow: var(--dom) 10px -10px 0px -3px, var(--cor1) 10px -10px, var(--dom) 20px -20px 0px -3px, var(--cor2) 20px -20px;
+        /* -webkit-box-shadow: var(--dom) 10px -10px 0px -3px, var(--cor1) 10px -10px, var(--dom) 20px -20px 0px -3px, var(--cor2) 20px -20px;
+                box-shadow: var(--dom) 10px -10px 0px -3px, var(--cor1) 10px -10px, var(--dom) 20px -20px 0px -3px, var(--cor2) 20px -20px; */
     }
     section.sobre p {
         width: 80vw;
@@ -91,17 +93,17 @@ section.sobre .button button:hover {
 @media screen and (max-width: 576px) {
     section.sobre img {
         width: 90vw;
-        -webkit-box-shadow: var(--dom) 10px -10px 0px -3px, var(--cor1) 10px -10px;
-                box-shadow: var(--dom) 10px -10px 0px -3px, var(--cor1) 10px -10px;
+        /* -webkit-box-shadow: var(--dom) 10px -10px 0px -3px, var(--cor1) 10px -10px;
+                box-shadow: var(--dom) 10px -10px 0px -3px, var(--cor1) 10px -10px; */
     }
     section.sobre p {
         width: 90vw;
     }
 }
 
-@media only screen and (max-height: 412px) and (max-width: 992px) and (orientation: landscape) {
+/* @media only screen and (max-height: 412px) and (max-width: 992px) and (orientation: landscape) {
     section.sobre img {
         -webkit-box-shadow: var(--dom) 10px -10px 0px -3px, var(--cor1) 10px -10px, var(--dom) 20px -20px 0px -3px, var(--cor2) 20px -20px;
                 box-shadow: var(--dom) 10px -10px 0px -3px, var(--cor1) 10px -10px, var(--dom) 20px -20px 0px -3px, var(--cor2) 20px -20px;
     }
-}
+} */
