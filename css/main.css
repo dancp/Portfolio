@@ -8,8 +8,8 @@
     --cinza: #808080;
     --cor1: #FF5555;
     --cor2: #7eb0e1;
-    --cor1-rgb: 255, 85, 85;
-    --cor2-rgb: 126, 176, 225;
+    --cor1-rgb: rgba(255, 87, 87, 0.20);
+    --cor2-rgb: rgb(126, 176, 225, 0.20);
     --cinza-rgb: 128, 128, 128;
 }
 
@@ -17,10 +17,10 @@
     --dom: #212121;
     --sec: #fdfefe;
     --cinza: #D3D3D3;
-    --cor1: #FF5555;
+    --cor1: #ff5555;
     --cor2: #7eb0e1;
-    --cor1-rgb: 255, 85, 85;
-    --cor2-rgb: 126, 176, 225;
+    --cor1-rgb: rgba(255, 87, 87, 0.80);
+    --cor2-rgb: rgb(126, 176, 225, 0.80);
     --cinza-rgb: 211, 211, 211;
 }
 
@@ -46,7 +46,9 @@ p > a {
     padding: 0 2px;
 }
 
-p > a:hover {
+p > a:hover, 
+p > a:focus, 
+p > a:active {
     color: var(--dom);
     background-color: var(--cor1);
 }
@@ -187,7 +189,9 @@ header nav.navbar ul.nav-menu li.nav-item a.nav-link strong {
     color: var(--cor1);
 }
 
-header nav.navbar ul.nav-menu li.nav-item a.nav-link:hover {
+header nav.navbar ul.nav-menu li.nav-item a.nav-link:hover, 
+header nav.navbar ul.nav-menu li.nav-item a.nav-link:focus, 
+header nav.navbar ul.nav-menu li.nav-item a.nav-link:active {
     color: var(--cor1);
 }
 
@@ -394,7 +398,9 @@ section.footer .social a {
             transition-duration: 0.3s;
 }
 
-section.footer .social a:hover {
+section.footer .social a:hover, 
+section.footer .social a:focus, 
+section.footer .social a:active {
     outline: 0;
     color: var(--cor1);
 }

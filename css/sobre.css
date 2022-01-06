@@ -57,7 +57,9 @@ section.sobre .button button {
             transition-duration: .3s;
 }
 
-section.sobre .button button:hover {
+section.sobre .button button:hover, 
+section.sobre .button button:focus, 
+section.sobre .button button:active {
     background-color: var(--cor1);
     color: var(--dom);
     cursor: pointer;

@@ -59,7 +59,9 @@ section.banner .banner-txt .button button {
             transition-duration: .3s;
 }
 
-section.banner .banner-txt .button button:hover {
+section.banner .banner-txt .button button:hover, 
+section.banner .banner-txt .button button:focus, 
+section.banner .banner-txt .button button:active {
     background-color: var(--cor1);
     color: var(--dom);
     cursor: pointer;
@@ -209,9 +211,17 @@ section.portfolio .ux {
     /* background-image: url(../assets/ux/ux.png); */
 }
 
+section.portfolio .ux:hover, section.portfolio .ux:active, section.portfolio .ux:focus {
+    background-color: var(--cor1-rgb);
+}
+
 section.portfolio .frontend {
     background-color: hsla(0, 100%, 100%, 0.07);
     /* background-image: url(../assets/frontend/frontend.png); */
+}
+
+section.portfolio .frontend:hover {
+    background-color: var(--cor2-rgb);
 }
 
 section.portfolio .txt {
