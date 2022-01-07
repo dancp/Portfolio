@@ -38,7 +38,7 @@ body {
     background-color: var(--dom);
 }
 
-p > a {
+a.link {
     color: var(--sec);
     -webkit-text-decoration-color: var(--cor1);
             text-decoration-color: var(--cor1);
@@ -46,11 +46,30 @@ p > a {
     padding: 0 2px;
 }
 
-p > a:hover,
-p > a:focus,
-p > a:active {
+a.link:hover,
+a.link:focus,
+a.link:active {
     color: var(--dom);
     background-color: var(--cor1);
+}
+
+:focus {
+    outline: 4px solid #3BFF72 !important;
+}
+
+.skip-nav-link {
+    background-color: var(--sec);
+    color: var(--dom);
+    position: absolute;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1rem;
+    transform: translateY(-120%);
+    transition: transform .3s ease-in;
+}
+
+.skip-nav-link:focus {
+    transform: translate(4px, 4px);
 }
 
 /* <--- RESPONSIVE TOGGLE DARK MODE ---> */
