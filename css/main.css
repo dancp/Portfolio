@@ -3,24 +3,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
 
 :root {
-    --dom: #fdfefe;
+    --dom: #FDFEFE;
     --sec:  #212121;
     --cinza: #808080;
     --cor1: #FF5555;
-    --cor2: #7eb0e1;
-    --cor1-rgb: rgba(255, 87, 87, 0.20);
-    --cor2-rgb: rgba(126, 176, 225, 0.20);
+    --cor2: #7EB0E1;
+    --cor1-rgba: rgba(255, 87, 87, 0.20);
+    --cor2-rgba: rgba(126, 176, 225, 0.20);
     --cinza-rgb: 128, 128, 128;
 }
 
 [data-theme="dark"] {
     --dom: #212121;
-    --sec: #fdfefe;
+    --sec: #FDFEFE;
     --cinza: #D3D3D3;
-    --cor1: #ff5555;
-    --cor2: #7eb0e1;
-    --cor1-rgb: rgba(255, 87, 87, 0.80);
-    --cor2-rgb: rgba(126, 176, 225, 0.80);
+    --cor1: #FF5555;
+    --cor2: #7EB0E1;
+    --cor1-rgba: rgba(255, 87, 87, 0.80);
+    --cor2-rgba: rgba(126, 176, 225, 0.80);
     --cinza-rgb: 211, 211, 211;
 }
 
@@ -55,8 +55,10 @@ a.link:active {
 
 :focus {
     outline: 4px solid #3BFF72 !important;
+    outline-offset: 2px;
 }
 
+/* <--- SKIP NAV ---> */
 .skip-nav-link {
     background-color: var(--sec);
     color: var(--dom);
@@ -69,7 +71,7 @@ a.link:active {
 }
 
 .skip-nav-link:focus {
-    transform: translate(4px, 4px);
+    transform: translate(6px, 4px);
 }
 
 /* <--- RESPONSIVE TOGGLE DARK MODE ---> */

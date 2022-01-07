@@ -15,6 +15,18 @@ section.banner {
     margin-bottom: 15vh;
 }
 
+/* <--- RESPONSIVE BANNER ---> */
+@media screen and (max-width: 768px) {
+    section.banner {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        margin-bottom: 10vh;
+    }
+}
+
+/* <--- BANNER TEXT ---> */
 section.banner .banner-txt {
     width: 35vw;
 }
@@ -23,13 +35,14 @@ section.banner .banner-txt h1 {
     color: var(--sec);
     font-size: 3.5rem;
     font-weight: 800;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
 }
 
 section.banner .banner-txt h2 {
     color: var(--cinza);
     font-size: 1.9rem;
     font-weight: 300;
+    margin-bottom: 3rem;
 }
 
 section.banner .banner-txt h2 strong {
@@ -44,37 +57,7 @@ section.banner .banner-txt h2 strong:nth-of-type(2) {
     color: var(--cor2);
 }
 
-section.banner .banner-txt .button {
-    margin-top: 3rem;
-}
-section.banner .banner-txt .button button {
-    background-color: var(--dom);
-    color: var(--cor1);
-    border: 2px solid var(--cor1);
-    font-weight: 800;
-    padding: 8px 25px 8px 25px;
-    border-radius: 10px;
-    -webkit-transition-duration: .3s;
-         -o-transition-duration: .3s;
-            transition-duration: .3s;
-}
-
-section.banner .banner-txt .button button:hover, 
-section.banner .banner-txt .button button:focus, 
-section.banner .banner-txt .button button:active {
-    background-color: var(--cor1);
-    color: var(--dom);
-    cursor: pointer;
-}
-
-section.banner .banner-img img {
-    width: 30vw;
-    border-radius: 5px;
-    -webkit-box-shadow: var(--dom) -10px -10px 0px -3px, var(--cor1) -10px -10px, var(--dom) -20px -20px 0px -3px, var(--cor2) -20px -20px;
-            box-shadow: var(--dom) -10px -10px 0px -3px, var(--cor1) -10px -10px, var(--dom) -20px -20px 0px -3px, var(--cor2) -20px -20px;
-}
-
-/* <--- RESPONSIVE BANNER ---> */
+/* <--- RESPONSIVE BANNER TEXT ---> */
 @media screen and (min-width: 1440px) {
     section.banner .banner-txt {
         width: 25vw;
@@ -84,9 +67,6 @@ section.banner .banner-img img {
     }
     section.banner .banner-txt h2 {
         font-size: 2rem;
-    }
-    section.banner .banner-img img {
-        width: 25vw;
     }
 }
 
@@ -106,19 +86,9 @@ section.banner .banner-img img {
     section.banner .banner-txt h2 {
         font-size: 1.8rem;
     }
-    section.banner .banner-img img {
-        width: 35vw;
-    }
 }
 
 @media screen and (max-width: 768px) {
-    section.banner {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        margin-bottom: 10vh;
-    }
     section.banner .banner-txt {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -139,12 +109,6 @@ section.banner .banner-img img {
         font-size: 1.3rem;
         text-align: center;
     }
-    section.banner .banner-txt .button {
-        margin-bottom: 5rem;
-    }
-    section.banner .banner-img img {
-        width: 60vw;
-    }
 }
 
 @media screen and (max-width: 576px) {
@@ -157,8 +121,67 @@ section.banner .banner-img img {
     section.banner .banner-txt h2 {
         font-size: 1.1rem;
     }
+}
+
+/* <--- BANNER BUTTON ---> */
+section.banner .banner-txt .button button {
+    background-color: var(--dom);
+    color: var(--cor1);
+    border: 2px solid var(--cor1);
+    font-weight: 800;
+    padding: 8px 25px 8px 25px;
+    border-radius: 10px;
+    -webkit-transition-duration: .3s;
+         -o-transition-duration: .3s;
+            transition-duration: .3s;
+}
+
+section.banner .banner-txt .button button:hover, 
+section.banner .banner-txt .button button:focus, 
+section.banner .banner-txt .button button:active {
+    background-color: var(--cor1);
+    color: var(--dom);
+    cursor: pointer;
+}
+
+/* <--- RESPONSIVE BANNER BUTTON ---> */
+@media screen and (max-width: 768px) {
+    section.banner .banner-txt .button {
+        margin-bottom: 5rem;
+    }
+}
+
+/* <--- BANNER IMG ---> */
+section.banner .banner-img img {
+    width: 30vw;
+    border-radius: 5px;
+    -webkit-box-shadow: var(--dom) -10px -10px 0px -3px, var(--cor1) -10px -10px, var(--dom) -20px -20px 0px -3px, var(--cor2) -20px -20px;
+            box-shadow: var(--dom) -10px -10px 0px -3px, var(--cor1) -10px -10px, var(--dom) -20px -20px 0px -3px, var(--cor2) -20px -20px;
+}
+
+/* <--- RESPONSIVE BANNER IMG ---> */
+@media screen and (min-width: 1440px) {
+    section.banner .banner-img img {
+        width: 25vw;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    section.banner .banner-img img {
+        width: 35vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
     section.banner .banner-img img {
         width: 60vw;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    section.banner .banner-img img {
+        width: 60vw;
+        box-shadow: var(--dom) -10px -10px 0px -3px, var(--cor1) -10px -10px;
     }
 }
 
@@ -183,7 +206,7 @@ section.portfolio a.ux-link {
 section.portfolio a.ux-link:hover, 
 section.portfolio a.ux-link:focus, 
 section.portfolio a.ux-link:active {
-    background-color: var(--cor1-rgb);
+    background-color: var(--cor1-rgba);
 }
 
 section.portfolio a.frontend-link {
@@ -193,7 +216,7 @@ section.portfolio a.frontend-link {
 section.portfolio a.frontend-link:hover, 
 section.portfolio a.frontend-link:focus, 
 section.portfolio a.frontend-link:active {
-    background-color: var(--cor2-rgb);
+    background-color: var(--cor2-rgba);
 }
 
 /* <--- PORTFOLIO CARD ---> */
