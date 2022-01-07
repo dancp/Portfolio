@@ -53,7 +53,7 @@ p > a:active {
     background-color: var(--cor1);
 }
 
-/*TOGGLE SWITCH DARK MODE*/
+/* <--- RESPONSIVE TOGGLE DARK MODE ---> */
 .theme-switch-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -123,7 +123,7 @@ input:checked + .slider:before {
     border-radius: 50%;
 }
 
-/* RESPONSIVE TOGGLE SWITCH DARK MODE*/
+/* <--- RESPONSIVE TOGGLE DARK MODE ---> */
 @media screen and (max-width: 768px) {
     .theme-switch-wrapper {
         margin-top: -5vh;
@@ -154,78 +154,6 @@ header nav.navbar {
     margin-bottom: 15vh;
 }
 
-header nav.navbar a.nav-logo {
-    color: var(--sec);
-    font-size: 1.2rem;
-    font-weight: 600;
-    text-decoration: none;
-}
-
-header nav.navbar a.nav-logo span {
-    color: var(--cor1);
-}
-
-header nav.navbar ul.nav-menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-}
-
-header nav.navbar ul.nav-menu li.nav-item {
-    margin-left: 2rem;
-    list-style: none;
-}
-
-header nav.navbar ul.nav-menu li.nav-item:nth-of-type(1) {
-    margin-left: 0;
-}
-
-header nav.navbar ul.nav-menu li.nav-item a.nav-link {
-    color: var(--sec);
-    font-size: .8rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    text-decoration: none;
-    -webkit-transition-duration: .3s;
-         -o-transition-duration: .3s;
-            transition-duration: .3s;
-}
-
-header nav.navbar ul.nav-menu li.nav-item a.nav-link:not([href]) {
-    cursor: default;
-}
-
-header nav.navbar ul.nav-menu li.nav-item a.nav-link strong {
-    color: var(--cor1);
-}
-
-header nav.navbar ul.nav-menu li.nav-item a.nav-link:hover,
-header nav.navbar ul.nav-menu li.nav-item a.nav-link:focus,
-header nav.navbar ul.nav-menu li.nav-item a.nav-link:active {
-    color: var(--cor1);
-}
-
-header nav.navbar .hamburger {
-    display: none;
-}
-
-header nav.navbar .hamburger span.bar {
-    background-color: var(--sec);
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    -webkit-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-}
-
 /* <--- RESPONSIVE HEADER ---> */
 @media screen and (min-width: 1440px) {
     header nav.navbar {
@@ -250,11 +178,84 @@ header nav.navbar .hamburger span.bar {
         height: 10vh;
         margin-bottom: 5vh;
     }
+}
 
+@media screen and (max-width: 576px) {
+    header nav.navbar {
+        margin-bottom: 3vh;
+    }
+}
+
+@media only screen and (max-height: 412px) and (max-width: 768px) and (orientation: landscape) {
+    header nav.navbar {
+        height: 20vh;
+    }
+}
+
+/* <--- HEADER LOGO ---> */
+header nav.navbar a.nav-logo {
+    color: var(--sec);
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 1rem;
+    margin-left: -1rem;
+    text-decoration: none;
+}
+
+header nav.navbar a.nav-logo span {
+    color: var(--cor1);
+}
+
+/* <--- RESPONSIVE HEADER LOGO ---> */
+@media screen and (max-width: 768px) {
     header nav.navbar a.nav-logo {
         font-size: 1.5rem;
     }
+}
 
+/* <--- HEADER MENU ---> */
+header nav.navbar ul.nav-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: -1rem;
+}
+
+header nav.navbar ul.nav-menu li.nav-item {
+    list-style: none;
+}
+
+header nav.navbar ul.nav-menu li.nav-item a.nav-link {
+    color: var(--sec);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: .8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1rem;
+    -webkit-transition-duration: .3s;
+         -o-transition-duration: .3s;
+            transition-duration: .3s;
+}
+
+header nav.navbar ul.nav-menu li.nav-item a.nav-link strong {
+    color: var(--cor1);
+}
+
+header nav.navbar ul.nav-menu li.nav-item a.nav-link:hover,
+header nav.navbar ul.nav-menu li.nav-item a.nav-link:focus,
+header nav.navbar ul.nav-menu li.nav-item a.nav-link:active {
+    color: var(--cor1);
+}
+
+header nav.navbar ul.nav-menu li.nav-item a.nav-link:not([href]) {
+    cursor: default;
+}
+
+/* <--- RESPONSIVE HEADER MENU ---> */
+@media screen and (max-width: 768px) {
     header nav.navbar ul.nav-menu {
         background-color: var(--dom);
         position: fixed;
@@ -264,7 +265,6 @@ header nav.navbar .hamburger span.bar {
             -ms-flex-direction: column;
                 flex-direction: column;
         width: 100%;
-        text-align: center;
         -webkit-box-shadow:
         0px 6px 2px -4px hsla(0,0%,0%,0.14),
         0px 7px 1px -6px hsla(0,0%,0%,0.12),
@@ -280,15 +280,40 @@ header nav.navbar .hamburger span.bar {
         top: 10vh;
     }
 
-    header nav.navbar ul.nav-menu li.nav-item {
-        margin: 2rem 0;
-    }
-
     header nav.navbar ul.nav-menu li.nav-item a.nav-link {
         font-size: 1.5rem;
-        padding: 20px 50px;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
     }
+}
 
+@media only screen and (max-height: 412px) and (max-width: 768px) and (orientation: landscape) {
+    header nav.navbar ul.nav-menu li.nav-item {
+        margin: 1rem 0;
+    }
+}
+
+/* <--- HAMBURGER ICON ---> */
+header nav.navbar .hamburger {
+    display: none;
+}
+
+header nav.navbar .hamburger span.bar {
+    background-color: var(--sec);
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+/* <--- RESPONSIVE HAMBURGER ICON ---> */
+@media screen and (max-width: 768px) {
     header nav.navbar .hamburger {
         display: block;
         cursor: pointer;
@@ -311,27 +336,13 @@ header nav.navbar .hamburger span.bar {
     }
 }
 
-@media screen and (max-width: 576px) {
-    header nav.navbar {
-        margin-bottom: 3vh;
-    }
-}
-
-@media only screen and (max-height: 412px) and (max-width: 768px) and (orientation: landscape) {
-    header nav.navbar {
-        height: 20vh;
-    }
-    header nav.navbar ul.nav-menu li.nav-item {
-        margin: 1rem 0;
-    }
-}
-
 /* <--- MAIN ---> */
 main {
     width: 80vw;
     margin: 0 auto;
 }
 
+/* <--- RESPONSIVE MAIN ---> */
 @media screen and (min-width: 1440px) {
     main {
         width: 70vw;
@@ -370,78 +381,6 @@ section.footer {
     border-top: 1px solid rgba(var(--cinza-rgb), 0.2);
 }
 
-section.footer .title {
-    margin-bottom: 1rem;
-}
-
-section.footer .title h1 {
-    color: var(--sec);
-    font-size: 1.2rem;
-    font-weight: 700;
-}
-
-section.footer .email {
-    margin-bottom: 1rem;
-}
-
-section.footer .email a {
-    font-size: 0.9rem;
-    color: var(--cor1);
-    text-decoration: none;
-}
-
-section.footer .social {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    width: 300px;
-    height: 50px;
-    margin-bottom: 1rem;
-}
-
-section.footer .social a {
-    color: var(--sec);
-    height: 100%;
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-transition-duration: 0.3s;
-         -o-transition-duration: 0.3s;
-            transition-duration: 0.3s;
-}
-
-section.footer .social a:hover,
-section.footer .social a:focus,
-section.footer .social a:active {
-    color: var(--cor1);
-}
-
-section.footer .social svg {
-    width: 30px;
-    height: 30px;
-    fill: currentColor;
-}
-
-section.footer .copyright p {
-    color: var(--sec);
-    font-size: 0.8rem;
-    text-align: center;
-    margin-bottom: 0.5rem;
-}
-
 /* <--- RESPONSIVE FOOTER ---> */
 @media screen and (min-width: 1440px) {
     section.footer {
@@ -465,4 +404,66 @@ section.footer .copyright p {
     section.footer {
         margin-top: 10vh;
     }
+}
+
+/* <--- FOOTER TITLE ---> */
+section.footer .title {
+    margin-bottom: 1rem;
+}
+
+section.footer .title h1 {
+    color: var(--sec);
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+/* <--- FOOTER EMAIL ---> */
+section.footer .email {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: .5rem;
+}
+
+section.footer .email a {
+    font-size: 0.9rem;
+    color: var(--cor1);
+    text-decoration: none;
+    padding: .5rem;
+}
+
+/* <--- FOOTER SOCIAL ICONS ---> */
+section.footer .social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: .5rem;
+}
+
+section.footer .social a {
+    color: var(--sec);
+    padding: 1rem;
+    -webkit-transition-duration: 0.3s;
+         -o-transition-duration: 0.3s;
+            transition-duration: 0.3s;
+}
+
+section.footer .social a:hover,
+section.footer .social a:focus,
+section.footer .social a:active {
+    color: var(--cor1);
+}
+
+section.footer .social svg {
+    width: 30px;
+    height: 30px;
+    fill: currentColor;
+}
+
+/* <--- FOOTER COPYRIGHT ---> */
+section.footer .copyright p {
+    color: var(--sec);
+    font-size: 0.8rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
 }

@@ -168,13 +168,35 @@ section.portfolio {
     display: grid;
     -ms-grid-columns: 1fr 2% 1fr;
     grid-template-columns: 1fr 1fr;
-    gap: 2%;
+    gap: 30px;
 }
 
+/* <--- PORTFOLIO CARD LINK ---> */
 section.portfolio a {
     text-decoration: none;
 }
 
+section.portfolio a.ux-link {
+    background-color: hsla(0, 100%, 100%, 0.07);
+}
+
+section.portfolio a.ux-link:hover, 
+section.portfolio a.ux-link:focus, 
+section.portfolio a.ux-link:active {
+    background-color: var(--cor1-rgb);
+}
+
+section.portfolio a.frontend-link {
+    background-color: hsla(0, 100%, 100%, 0.07);
+}
+
+section.portfolio a.frontend-link:hover, 
+section.portfolio a.frontend-link:focus, 
+section.portfolio a.frontend-link:active {
+    background-color: var(--cor2-rgb);
+}
+
+/* <--- PORTFOLIO CARD ---> */
 section.portfolio .card {
     width: 100%;
     border-radius: 5px;
@@ -201,22 +223,7 @@ section.portfolio .card:hover {
     0px 3px 5px -1px hsla(0,0%,0%,0.2);
 }
 
-section.portfolio .ux {
-    background-color: hsla(0, 100%, 100%, 0.07);
-}
-
-section.portfolio .ux:hover, section.portfolio .ux:active, section.portfolio .ux:focus {
-    background-color: var(--cor1-rgb);
-}
-
-section.portfolio .frontend {
-    background-color: hsla(0, 100%, 100%, 0.07);
-}
-
-section.portfolio .frontend:hover {
-    background-color: var(--cor2-rgb);
-}
-
+/* <--- PORTFOLIO CARD TEXTO ---> */
 section.portfolio .txt {
     padding: 5%;
 }
