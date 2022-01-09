@@ -5,22 +5,20 @@
 :root {
     --dom: #FDFEFE;
     --sec:  #212121;
-    --cinza: #808080;
-    --cor1: #FF5555;
-    --cor2: #7EB0E1;
-    --cor1-rgba: rgba(255, 87, 87, 0.20);
-    --cor2-rgba: rgba(126, 176, 225, 0.20);
-    --cinza-rgb: 128, 128, 128;
+    --cinza: #696969;
+    --cor1: #FF4433;
+    --cor2: #6495ED;
+    --cor1-rgba: rgba(255, 68, 51, 0.20);
+    --cor2-rgba: rgba(100, 149, 237, 0.20);
+    --cinza-rgb: 105, 105, 105;
 }
 
 [data-theme="dark"] {
     --dom: #212121;
     --sec: #FDFEFE;
     --cinza: #D3D3D3;
-    --cor1: #FF5555;
-    --cor2: #7EB0E1;
-    --cor1-rgba: rgba(255, 87, 87, 0.80);
-    --cor2-rgba: rgba(126, 176, 225, 0.80);
+    --cor1-rgba: rgba(255, 68, 51, 0.80);
+    --cor2-rgba: rgba(100, 149, 237, 0.80);
     --cinza-rgb: 211, 211, 211;
 }
 
@@ -1013,6 +1011,12 @@ section.footer .email a {
     padding: .5rem;
 }
 
+section.footer .email a:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--cor1);
+    text-decoration-thickness: 2px;
+}
+
 /* <--- FOOTER SOCIAL ICONS ---> */
 section.footer .social {
     display: -webkit-box;
@@ -1024,9 +1028,14 @@ section.footer .social {
 section.footer .social a {
     color: var(--sec);
     padding: 1rem;
+    margin-right: 2rem;
     -webkit-transition-duration: 0.3s;
          -o-transition-duration: 0.3s;
             transition-duration: 0.3s;
+}
+
+section.footer .social a:nth-of-type(4) {
+    margin-right: 0;
 }
 
 section.footer .social a:hover,
