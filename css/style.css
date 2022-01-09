@@ -348,6 +348,7 @@ main {
 }
 
 .theme-switch {
+    font-size: 0;
     display: inline-block;
     position: relative;
     height: 17px;
@@ -762,8 +763,13 @@ section.portfolio-title h2 {
 }
 
 /* <--- CARDS IMG ---> */
+.portfolio-card .card-img {
+    display: flex;
+}
+
 .portfolio-card .card-img img {
     width: 100%;
+    height: 100%;
     border-radius: 5px 5px 0 0;
     -webkit-transition-duration: 0.25s;
          -o-transition-duration: 0.25s;
