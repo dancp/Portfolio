@@ -154,9 +154,9 @@ header nav.navbar {
 }
 
 .skip-nav-link:focus {
-    -webkit-transform: translate(6px, 4px);
-        -ms-transform: translate(6px, 4px);
-            transform: translate(6px, 4px);
+    -webkit-transform: translate(6px, 6px);
+        -ms-transform: translate(6px, 6px);
+            transform: translate(6px, 6px);
 }
 
 /* <--- HEADER LOGO ---> */
