@@ -1,2 +1,2 @@
 # Meu site portfólio
-Em desenvolvimento.
+Em construção.
