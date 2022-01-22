@@ -5,7 +5,7 @@
 :root {
     --dom: #FDFEFE;
     --sec:  #212121;
-    --cinza: #696969;
+    --cinza: #575757;
     --cor1: #FF4433;
     --cor2: #6495ED;
     --cor1-rgba: rgba(255, 68, 51, 0.20);
@@ -710,7 +710,7 @@ section.portfolio-title {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    width: 40vw;
+    width: 50vw;
     margin: 0 auto;
     margin-bottom: 15vh;
 }
@@ -720,30 +720,32 @@ section.portfolio-title h1 {
     font-size: 3.5rem;
     font-weight: 800;
     margin-bottom: 1.5rem;
+    text-align: center;
 }
 
 section.portfolio-title h2 {
     color: var(--sec);
     font-size: 1rem;
     text-align: center;
+    width: 40vw;
 }
 
 /* <--- RESPONSIVE PORTFOLIO TITLE ---> */
 @media screen and (max-width: 768px) {
-    section.portfolio-titles {
+    section.portfolio-title {
         width: 60vw;
         margin-bottom: 10vh;
     }
-    section.portfolio-titles h1 {
+    section.portfolio-title h1 {
         font-size: 2.8rem;
     }
 
-    section.portfolio-titles h2 {
+    section.portfolio-title h2 {
         font-size: 1rem;
     }
 }
 @media screen and (max-width: 576px) {
-    section.portfolio-titles {
+    section.portfolio-title {
         width: 80vw;
     }
 }
@@ -836,20 +838,45 @@ section.portfolio-ui {
     -ms-grid-columns: 1fr 100px 1fr;
     grid-template-columns: 1fr 1fr;
     gap: 100px;
+    margin-bottom: 15vh;
 }
 
 /* <--- RESPONSIVE PORTFOLIO UI --->  */
 @media screen and (max-width: 1200px) {
-    section.ui-portfolio {
+    section.portfolio-ui {
         gap: 50px;
     }
 }
 @media screen and (max-width: 768px) {
-        section.ui-portfolio {
+        section.portfolio-ui {
         -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     }
 }
+
+
+/* <--- PORTFOLIO UI --->  */
+section.portfolio-prototype {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 100px 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+}
+
+/* <--- RESPONSIVE PORTFOLIO UI --->  */
+@media screen and (max-width: 1200px) {
+    section.portfolio-prototype {
+        gap: 50px;
+    }
+}
+@media screen and (max-width: 768px) {
+        section.portfolio-prototype {
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    }
+}
+
 
 /* <---// SOBRE MIM PAGE //---> */
 /* <---// SOBRE MIM //---> */
