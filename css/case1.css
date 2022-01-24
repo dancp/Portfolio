@@ -1,53 +1,49 @@
+/* <--- MENU ---> */
 section.kurumins-menu {
     width: 70%;
     margin: 0 auto;
     margin-bottom: 5vh;
 }
 
+@media screen and (max-width: 768px) {
+    section.kurumins-menu {
+        width: 100%;
+    }
+}
+
 section.kurumins-menu a {
-    color: var(--sec);
+    color: var(--cinza);
     text-decoration: none;
 }
 
 section.kurumins-menu a:hover {
+    color: var(--cor1);
     text-decoration: underline;
 }
 
+section.kurumins-menu strong {
+    font-weight: 600;
+}
+
 section.kurumins-menu li {
-    color: var(--sec);
+    color: var(--cinza);
+    margin-left: .9rem;
 }
 
 section.kurumins-menu .sub-menu {
-    margin-left: 1rem;
+    margin-left: .9rem;
 }
 
+/* <--- DESCOBERTA ---> */
 section.kurumins {
     width: 70%;
     margin: 0 auto;
 }
 
-section.kurumins .descoberta {
-    margin-bottom: 4rem;
-}
-
-section.kurumins img {
-    border-radius: 5px;
-    width: 100%;
-    height: 100%;
-    margin: 1.5rem auto;
-}
-
-section.kurumins .benchmarking,
-section.kurumins .desafios {
-    margin-top: -1.5rem;
-}
-
-section.kurumins .benchmarking .bench-ong {
-    margin-bottom: 4rem;
-}
-
-section.kurumins .benchmarking .bench-ong li {
-    margin-bottom: 2rem;
+@media screen and (max-width: 768px) {
+    section.kurumins {
+        width: 100%;
+    }
 }
 
 section.kurumins h4 {
@@ -66,17 +62,23 @@ section.kurumins h5 {
 
 section.kurumins p {
     color: var(--sec);
+    line-height: 1.5;
+    text-align: justify;
     margin-bottom: 1rem;
 }
 
 section.kurumins li {
     color: var(--sec);
-    margin-left: 3rem;
+    line-height: 1.5;
+    text-align: justify;
+    margin-left: 2rem;
     margin-bottom: 1rem;
 }
 
 section.kurumins blockquote {
-    background-color: lightgray;
+    background-color: #FAF9F6;
+    text-align: justify;
+    line-height: 1.5;
     padding: 1rem 2rem;
     border-radius: 5px;
     margin-bottom: 1.5rem;
@@ -84,4 +86,28 @@ section.kurumins blockquote {
 
 section.kurumins strong {
     font-weight: 600;
+}
+
+section.kurumins img {
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    margin: 1.5rem auto;
+}
+
+section.kurumins .descoberta {
+    margin-bottom: 4rem;
+}
+
+section.kurumins #benchmarking,
+section.kurumins #desafios {
+    margin-top: -1.5rem;
+}
+
+section.kurumins #benchmarking .bench-ong {
+    margin-top: 4rem;
+}
+
+section.kurumins #benchmarking .bench-ong li {
+    margin-bottom: 2rem;
 }
