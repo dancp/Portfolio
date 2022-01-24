@@ -6,20 +6,24 @@
     --dom: #FDFEFE;
     --sec:  #212121;
     --cinza: #575757;
-    --cor1: #FF4433;
-    --cor2: #6495ED;
-    --cor1-rgba: rgba(255, 68, 51, 0.20);
-    --cor2-rgba: rgba(100, 149, 237, 0.20);
+    --cor1: #E61300;
+    --cor2: #2D6FE7;
+    --cor1-rgba: rgba(230, 19, 0, 0.20);
+    --cor2-rgba: rgba(45, 111, 231, 0.20);
     --cinza-rgb: 105, 105, 105;
+    --focus: #00611B;
 }
 
 [data-theme="dark"] {
     --dom: #212121;
     --sec: #FDFEFE;
     --cinza: #D3D3D3;
+    --cor1: #FF4433;
+    --cor2: #6495ED;
     --cor1-rgba: rgba(255, 68, 51, 0.80);
     --cor2-rgba: rgba(100, 149, 237, 0.80);
     --cinza-rgb: 211, 211, 211;
+    --focus: #3BFF72;
 }
 
 * {
@@ -52,7 +56,7 @@ a.link:active {
 }
 
 :focus {
-    outline: 4px solid #3BFF72 !important;
+    outline: 4px solid var(--focus) !important;
     outline-offset: 2px;
     border-radius: 5px;
 }
@@ -348,7 +352,7 @@ main {
 }
 
 .theme-switch {
-    font-size: 0;
+    font-size: 0rem;
     display: inline-block;
     position: relative;
     height: 17px;
@@ -1076,6 +1080,7 @@ section.footer {
 .footer-content .email a {
     font-size: 0.9rem;
     color: var(--cor1);
+    font-weight: 600;
     text-decoration: none;
     padding: .5rem;
 }
