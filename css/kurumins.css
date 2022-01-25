@@ -103,16 +103,16 @@ section.kurumins img {
 		0px 1px 3px 0px hsla(0,0%,0%,0.2);
 }
 
-section.kurumins #matriz-csd img {
+section.kurumins img.img-home {
     margin: 0 auto;
     transition-duration: 0.25s;
 }
 
-section.kurumins #matriz-csd img:hover {
-    transform: scale(1.02);
+section.kurumins img.img-home:hover {
+    transform: scale(1.015);
 }
 
-section.kurumins #matriz-csd a {
+section.kurumins a.img-link {
     display: flex;
     margin: 1.5rem auto;
 }
