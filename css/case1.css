@@ -82,6 +82,10 @@ section.kurumins blockquote {
     padding: 1rem 2rem;
     border-radius: 5px;
     margin-bottom: 1.5rem;
+    box-shadow:
+		0px 1px 1px 0px hsla(0,0%,0%,0.14), 
+		0px 2px 1px -1px hsla(0,0%,0%,0.12), 
+		0px 1px 3px 0px hsla(0,0%,0%,0.2);
 }
 
 section.kurumins strong {
@@ -94,10 +98,23 @@ section.kurumins img {
     height: 100%;
     margin: 1.5rem auto;
     box-shadow:
-		/* offset-x | offset-y | blur-radius | spread-radius | color */
 		0px 1px 1px 0px hsla(0,0%,0%,0.14), 
 		0px 2px 1px -1px hsla(0,0%,0%,0.12), 
 		0px 1px 3px 0px hsla(0,0%,0%,0.2);
+}
+
+section.kurumins #matriz-csd img {
+    margin: 0 auto;
+    transition-duration: 0.25s;
+}
+
+section.kurumins #matriz-csd img:hover {
+    transform: scale(1.02);
+}
+
+section.kurumins #matriz-csd a {
+    display: flex;
+    margin: 1.5rem auto;
 }
 
 section.kurumins .descoberta {
