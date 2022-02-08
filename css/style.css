@@ -8,7 +8,7 @@
     --cinza: #575757;
     --cor1: #E61300;
     --cor2: #2D6FE7;
-    --cor1-rgba: rgba(230, 19, 0, 0.20);
+    --cor1-rgba: rgba(230, 19, 0, 0.75);
     --cor2-rgba: rgba(45, 111, 231, 0.20);
     --cinza-rgb: 105, 105, 105;
     --focus: #00611B;
@@ -20,7 +20,7 @@
     --cinza: #D3D3D3;
     --cor1: #FF4433;
     --cor2: #6495ED;
-    --cor1-rgba: rgba(255, 68, 51, 0.80);
+    --cor1-rgba: rgba(255, 68, 51, .75);
     --cor2-rgba: rgba(100, 149, 237, 0.80);
     --cinza-rgb: 211, 211, 211;
     --focus: #3BFF72;
@@ -80,6 +80,26 @@ a.link:active {
 .curriculo-button button:focus,
 .curriculo-button button:active {
     background-color: var(--cor1);
+    color: var(--dom);
+    cursor: pointer;
+}
+
+/* <--- PORTFOLIO BUTTON ---> */
+.portfolio-button button {
+    background-color: var(--cor1);
+    color: var(--dom);
+    font-weight: 800;
+    padding: 10px 27px;
+    border-radius: 5px;
+    -webkit-transition-duration: .25s;
+         -o-transition-duration: .25s;
+            transition-duration: .25s;
+}
+
+.portfolio-button button:hover,
+.portfolio-button button:focus,
+.portfolio-button button:active {
+    background-color: var(--cor1-rgba);
     color: var(--dom);
     cursor: pointer;
 }
@@ -434,6 +454,7 @@ section.banner {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    
     margin-bottom: 15vh;
 }
 
@@ -549,6 +570,12 @@ section.banner .banner-txt h2 strong:nth-of-type(2) {
     section.banner .banner-txt h2 {
         font-size: 1.1rem;
     }
+}
+
+/* <--- BANNER BUTTONS ---> */
+section.banner .banner-buttons {
+    display: flex;
+    gap: 20px;
 }
 
 /* <--- BANNER IMG ---> */
@@ -1041,6 +1068,10 @@ section.footer {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    /* margin-right: -62px; */
+}
+
+#footer-case {
     margin-right: -62px;
 }
 
