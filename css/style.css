@@ -9,7 +9,7 @@
     --cor1-light: #FF3623;
     --cor1: #E61300;
     --cor1-dark: #AA0E00;
-    --cor2: #36a584;
+    --cor2: #008558;
     --cor1-rgba: rgba(230, 19, 0, 0.7);
     --cor2-rgba: rgba(45, 111, 231, 0.20);
     --cinza-rgb: 105, 105, 105;
@@ -146,17 +146,23 @@ header nav.navbar {
 @media screen and (max-width: 768px) {
     header nav.navbar {
         height: 10vh;
-        margin-bottom: 5vh;
+        margin-bottom: 7vh;
     }
 }
 
 @media screen and (max-width: 576px) {
     header nav.navbar {
-        margin-bottom: 3vh;
+        margin-bottom: 5vh;
     }
 }
 
 @media only screen and (max-height: 412px) and (max-width: 768px) and (orientation: landscape) {
+    header nav.navbar {
+        height: 20vh;
+    }
+}
+
+@media only screen and (max-height: 412px) and (min-width: 768px) and (orientation: landscape) {
     header nav.navbar {
         height: 20vh;
     }
@@ -271,7 +277,7 @@ header nav.navbar ul.nav-menu li.nav-item a.nav-link:not([href]) {
 
     header nav.navbar ul.nav-menu.active {
         left: 0;
-        top: 10vh;
+        top: 18vh;
     }
 
     header nav.navbar ul.nav-menu li.nav-item a.nav-link {
@@ -290,7 +296,7 @@ header nav.navbar ul.nav-menu li.nav-item a.nav-link:not([href]) {
         padding-bottom: .8rem;
     }
     header nav.navbar ul.nav-menu.active {
-        top: 15vh;
+        top: 35vh;
     }
 }
 
@@ -374,8 +380,16 @@ main {
     margin-bottom: 15vh;
 }
 
+em {
+    color: var(--cinza);
+    font-size: .8rem;
+    font-weight: 500;
+    position: absolute;
+    margin-left: -5rem;
+    margin-top: -.05rem;
+  }
+
 .theme-switch {
-    font-size: 0rem;
     display: inline-block;
     position: relative;
     height: 17px;
@@ -434,13 +448,13 @@ input:checked + .slider:before {
 @media screen and (max-width: 768px) {
     .theme-switch-wrapper {
         margin-top: -5vh;
-        margin-bottom: 5vh;
+        margin-bottom: 7vh;
     }
 }
 @media screen and (max-width: 576px) {
     .theme-switch-wrapper {
         margin-top: -3vh;
-        margin-bottom: 3vh;
+        margin-bottom: 5vh;
     }
 }
 
@@ -552,7 +566,7 @@ section.banner .banner-txt h2 strong:nth-of-type(2) {
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center;
-        width: 70vw;
+        width: 80vw;
     }
     section.banner .banner-txt h1 {
         font-size: 2.7rem;
@@ -778,6 +792,7 @@ section.portfolio-title h2 {
 
     section.portfolio-title h2 {
         font-size: 1rem;
+        width: 70vw;
     }
 }
 @media screen and (max-width: 576px) {
@@ -935,9 +950,11 @@ section.sobre-mim {
 section.sobre-mim img {
     width: 65vw;
     margin-bottom: 5vh;
+    margin-top: 2vh;
     border-radius: 5px;
     -webkit-box-shadow: var(--dom) 10px -10px 0px -3px, var(--cor1) 10px -10px, var(--dom) 20px -20px 0px -3px, var(--cor2) 20px -20px;
         box-shadow: var(--dom) 10px -10px 0px -3px, var(--cor1) 10px -10px, var(--dom) 20px -20px 0px -3px, var(--cor2) 20px -20px;
+    
 }
 
 /* <--- RESPONSIVE SOBRE MIM IMG ---> */
@@ -976,9 +993,8 @@ section.sobre-mim h1 {
 
 section.sobre-mim p {
     color: var(--sec);
-    text-indent: 1rem;
     line-height: 1.5;
-    text-align: justify;
+    text-align: left;
     width: 60vw;
     margin-bottom: 5vh;
 }
@@ -1025,7 +1041,6 @@ section.footer {
     margin-top: 15vh;
     padding-top: 5vh;
     border-top: 1px solid rgba(var(--cinza-rgb), 0.2);
-    
 }
 
 /* <--- RESPONSIVE FOOTER ---> */
@@ -1078,13 +1093,14 @@ section.footer {
     /* margin-right: -62px; */
 }
 
-#footer-case {
+footer#kurumins .footer-content {
     margin-right: -62px;
 }
 
 /* <--- RESPONSIVE FOOTER CONTENT ---> */
 @media screen and (max-width: 768px) {
-    .footer-content {
+    .footer-content,
+    footer#kurumins .footer-content {
     margin-right: 0;
     }
 }

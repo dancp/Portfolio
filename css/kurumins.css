@@ -63,26 +63,30 @@ section.kurumins h5 {
 section.kurumins p {
     color: var(--sec);
     line-height: 1.5;
-    text-align: justify;
+    text-align: left;
     margin-bottom: 1rem;
 }
 
 section.kurumins li {
     color: var(--sec);
     line-height: 1.5;
-    text-align: justify;
+    text-align: left;
     margin-left: 2rem;
     margin-bottom: 1rem;
 }
 
 section.kurumins blockquote {
     background-color: #FAF9F6;
-    text-align: justify;
+    text-align: left;
     line-height: 1.5;
     padding: 1rem 2rem;
     border-radius: 5px;
     margin-bottom: 1.5rem;
-    box-shadow:
+    -webkit-box-shadow:
+		0px 1px 1px 0px hsla(0,0%,0%,0.14), 
+		0px 2px 1px -1px hsla(0,0%,0%,0.12), 
+		0px 1px 3px 0px hsla(0,0%,0%,0.2);
+            box-shadow:
 		0px 1px 1px 0px hsla(0,0%,0%,0.14), 
 		0px 2px 1px -1px hsla(0,0%,0%,0.12), 
 		0px 1px 3px 0px hsla(0,0%,0%,0.2);
@@ -96,8 +100,12 @@ section.kurumins img {
     border-radius: 5px;
     width: 100%;
     height: 100%;
-    margin: 1.5rem auto;
-    box-shadow:
+    margin: 0 auto;
+    -webkit-box-shadow:
+		0px 1px 1px 0px hsla(0,0%,0%,0.14), 
+		0px 2px 1px -1px hsla(0,0%,0%,0.12), 
+		0px 1px 3px 0px hsla(0,0%,0%,0.2);
+            box-shadow:
 		0px 1px 1px 0px hsla(0,0%,0%,0.14), 
 		0px 2px 1px -1px hsla(0,0%,0%,0.12), 
 		0px 1px 3px 0px hsla(0,0%,0%,0.2);
@@ -105,25 +113,30 @@ section.kurumins img {
 
 section.kurumins img.img-home {
     margin: 0 auto;
-    transition-duration: 0.25s;
+    -webkit-transition-duration: 0.25s;
+         -o-transition-duration: 0.25s;
+            transition-duration: 0.25s;
 }
 
 section.kurumins img.img-home:hover {
-    transform: scale(1.015);
+    -webkit-transform: scale(1.015);
+        -ms-transform: scale(1.015);
+            transform: scale(1.015);
 }
 
 section.kurumins a.img-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin: 1.5rem auto;
 }
 
-section.kurumins .descoberta {
-    margin-bottom: 4rem;
+section.kurumins a.img-link-last {
+    margin-bottom: 0;
 }
 
-section.kurumins #benchmarking,
-section.kurumins #desafios {
-    margin-top: -1.5rem;
+section.kurumins .descoberta {
+    margin-bottom: 4rem;
 }
 
 section.kurumins #benchmarking .bench-ong {
