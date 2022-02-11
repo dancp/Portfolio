@@ -839,13 +839,14 @@ section.portfolio-title h2 {
 
 /* <--- CARDS TXT ---> */
 .portfolio-card .card-txt {
-    line-height: 2.5;
-    padding: 2px 16px;
+    line-height: 1.5;
+    padding: 1rem;
 }
 
 .portfolio-card .card-txt h3 {
     color: var(--sec);
     font-weight: 700;
+    margin-bottom: 1rem;
 }
 
 .portfolio-card .card-txt p {
