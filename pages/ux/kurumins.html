@@ -231,7 +231,7 @@
         <section class="kurumins" id="desenvolvimento"></section>
         <section class="kurumins" id="implementacao"></section>
     </main>
-    <footer id="kurumins">
+    <footer>
         <section class="footer">
             <div class="footer-content">
                 <div class="title">
@@ -292,13 +292,12 @@
                 </div>
             </div>
             <div class="to-top-button">
-                <a class="to-top-link" href="#header">
-                    Ir para o topo
-                    <svg class="icon">
-                        <desc>Seta para cima</desc>
-                        <use xlink:href="#top"/>
-                    </svg>
-                </a>
+                    <button onclick="topFunction()" id="topBtn" title="Ir para o topo">
+                        <svg class="icon">
+                            <desc>Seta para cima</desc>
+                            <use xlink:href="#top"/>
+                        </svg>
+                    </button>
                 <svg display="none">
                     <symbol viewBox="0 0 512 512" id="top">
                         <path d="M0,0v512h512V0H0z M356.416,228.416c-4.16,4.16-9.621,6.251-15.083,6.251c-5.461,0-10.923-2.091-15.083-6.251
@@ -312,6 +311,7 @@
         </section>
     </footer>
 	<script src="../../js/hamburger.js"></script>
+    <script src="../../js/top_btn.js"></script>
 	<script src="../../js/dark.js"></script>
 </body>
 </html>

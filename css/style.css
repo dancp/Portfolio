@@ -8,10 +8,7 @@
     --cinza: #575757;
     --cor1-light: #FF3623;
     --cor1: #E61300;
-    --cor1-dark: #AA0E00;
-    --cor2: #008558;
-    --cor1-rgba: rgba(230, 19, 0, 0.7);
-    --cor2-rgba: rgba(45, 111, 231, 0.20);
+    --cor2: #34A377;
     --cinza-rgb: 105, 105, 105;
     --focus: #00611B;
 }
@@ -22,10 +19,7 @@
     --cinza: #D3D3D3;
     --cor1-light: #FF6D5F;
     --cor1: #FF4433;
-    --cor1-dark: #E21300;
-    --cor2: #78d1b6;
-    --cor1-rgba: rgba(255, 68, 51, .75);
-    --cor2-rgba: rgba(100, 149, 237, 0.80);
+    --cor2: #74D3AE;
     --cinza-rgb: 211, 211, 211;
     --focus: #3BFF72;
 }
@@ -82,8 +76,8 @@ a.link:active {
 .curriculo-button button:hover,
 .curriculo-button button:focus,
 .curriculo-button button:active {
-    color: var(--cor1-dark);
-    border-color: var(--cor1-dark);
+    color: var(--cor1-light);
+    border-color: var(--cor1-light);
     cursor: pointer;
 }
 
@@ -638,7 +632,8 @@ section.banner .banner-img img {
     }
 }
 
-/* <--- INDEX PORTFOLIO CARDS ---> */
+/*
+<--- INDEX PORTFOLIO CARDS --->
 section.index-portfolio-cards {
     display: -ms-grid;
     display: grid;
@@ -647,7 +642,7 @@ section.index-portfolio-cards {
     gap: 30px;
 }
 
-/* <--- RESPONSIVE INDEX PORTFOLIO CARDS ---> */
+<--- RESPONSIVE INDEX PORTFOLIO CARDS --->
 @media screen and (max-width: 768px) {
     section.index-portfolio-cards {
         -ms-grid-columns: 1fr;
@@ -655,7 +650,7 @@ section.index-portfolio-cards {
     }
 }
 
-/* <--- INDEX PORTFOLIO CARDS LINK ---> */
+<--- INDEX PORTFOLIO CARDS LINK --->
 section.index-portfolio-cards a {
     border-radius: 5px;
     text-decoration: none;
@@ -681,7 +676,7 @@ section.index-portfolio-cards a.frontend-link:active {
     background-color: var(--cor2-rgba);
 }
 
-/* <--- INDEX PORTFOLIO CARD ---> */
+<--- INDEX PORTFOLIO CARD --->
 section.index-portfolio-cards .card {
     border-radius: 5px;
     -webkit-box-shadow:
@@ -707,7 +702,7 @@ section.index-portfolio-cards .card:hover {
     0px 3px 5px -1px hsla(0,0%,0%,0.2);
 }
 
-/* <--- INDEX PORTFOLIO CARD TXT ---> */
+<--- INDEX PORTFOLIO CARD TXT --->
 section.index-portfolio-cards .index-card-txt {
     padding: 1.5rem;
 }
@@ -743,6 +738,7 @@ section.index-portfolio-cards .index-card-txt p strong:hover {
     color: var(--dom);
     background-color: var(--cor1);
 }
+*/
 
 /* <---// UX/UI AND FRONTEND PAGES //---> */
 /* <--- PORTFOLIO TITLE ---> */
@@ -1094,18 +1090,6 @@ section.footer {
     /* margin-right: -62px; */
 }
 
-footer#kurumins .footer-content {
-    margin-right: -62px;
-}
-
-/* <--- RESPONSIVE FOOTER CONTENT ---> */
-@media screen and (max-width: 768px) {
-    .footer-content,
-    footer#kurumins .footer-content {
-    margin-right: 0;
-    }
-}
-
 /* <--- FOOTER TITLE ---> */
 .footer-content .title {
     margin-bottom: 1rem;
@@ -1190,38 +1174,39 @@ footer#kurumins .footer-content {
 }
 
 /* <--- FOOTER TO TOP BUTTON ---> */
-.to-top-button {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-}
-
-.to-top-button a.to-top-link {
-    font-size: 0;
+.to-top-button #topBtn {
+    background-color: transparent;
     color: var(--sec);
+    display: none;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 99;
+    cursor: pointer;
     padding: 1rem;
+    opacity: 90%;
     -webkit-transition-duration: 0.25s;
          -o-transition-duration: 0.25s;
             transition-duration: 0.25s;
 }
 
-.to-top-button a.to-top-link:hover,
-.to-top-button a.to-top-link:focus,
-.to-top-button a.to-top-link:active {
+.to-top-button #topBtn:hover,
+.to-top-button #topBtn:focus,
+.to-top-button #topBtn:active {
     color: var(--cor1);
 }
 
-.to-top-button a.to-top-link svg {
+.to-top-button svg.icon {
     fill: currentColor;
-    width: 30px;
-    height: 30px;
-    border-radius: 5px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
 }
 
-/* <--- RESPONSIVE FOOTER TO TOP BUTTON ---> */
+/* <--- RESPONSIVE FOOTER TITLE ---> */
 @media screen and (max-width: 768px) {
-    .to-top-button {
-        margin-bottom: .5rem;
-        margin-top: -2rem;
+    .to-top-button #topBtn {
+        bottom: 5px;
+        right: 5px;
     }
 }
