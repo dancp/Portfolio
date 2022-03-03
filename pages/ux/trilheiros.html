@@ -8,7 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../../assets/favicon/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="../../css/style.css">
-    <title>Daniel Pontes - UX Design</title>
+    <link rel="stylesheet" type="text/css" href="../../css/kurumins.css">
+    <title>Daniel Pontes - Projeto UI Trilheiros</title>
 </head>
 <body>
     <header id="header">
@@ -20,7 +21,7 @@
                     <a href="../../index.html" class="nav-link">Página Inicial</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link"><strong>UX Design</strong></a>
+                    <a href="ux.html" class="nav-link">UX Design</a>
                 </li>
                 <li class="nav-item">
                     <a href="../frontend/frontend.html" class="nav-link">Front-end</a>
@@ -45,90 +46,127 @@
             </label>
         </div>
         <section class="portfolio-title">
-            <h1>UX Design</h1>
-            <h2>Meu portfólio de projetos em UX e UI.</h2>
+            <h1>Projeto UI Trilheiros</h1>
+            <h2>Projeto de UI de um aplicativo de trilhas e lazer.</h2>
         </section>
-        <section class="portfolio-ux">
-                <div class="portfolio-card">
-                        <div class="card-img">
-                            <a href="kurumins.html">
-                                <img src="../../assets/ux/ux1.jpg" alt="Capa do estudo de caso do projeto UX ONG Kurumins">
-                            </a>
-                        </div>
-                        <div class="card-txt">
-                            <h3>Estudo de Caso - Projeto Kurumins</h3>
-                            <p>Projeto de UX para a ONG Kurumins. Ainda não finalizado.</p>
-                        </div>
-                </div>
-            <!-- <div class="portfolio-card">
-                    <div class="card-img">
-                        <a href="case2.html">
-                            <img src="../../assets/ux/ux2.jpg" alt="">
-                        </a>
-                    </div>
-                    <div class="card-txt">
-                        <h3>UX estudo de caso 2</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-            </div> -->
+        <section class="case_nav">
+            <ul>
+                <li>
+                    <a href="#o_projeto"><strong>O Projeto</strong></a>
+                </li>
+                <li>
+                    <a href="#persona"><strong>Persona</strong></a>
+                </li>
+                <li>
+                    <a href="#task_flow"><strong>Task Flow</strong></a>
+                </li>
+                <li>
+                    <a href="#style_guide"><strong>Style Guide</strong></a>
+                    <ul>
+                        <li class="sub-menu">
+                            <a href="#cores">Cores</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="#tipografia">Tipografia</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="#botoes_forms">Botões e Formulários</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="#grid">Grid</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#prototipo"><strong>Protótipo</strong></a>
+                </li>
+                <li>
+                    <a href="#interacao"><strong>Interação</strong></a>
+                </li>
+            </ul>
         </section>
-        <!-- <section class="portfolio-ui">
-            <div class="portfolio-card">
-                <div class="card-img">
-                    <a href="#">
-                        <img src="../../assets/ux/ui1.jpg" alt="">
+        <section class="case">
+            <div class="case_block" id="o_projeto">
+                <h4>O Projeto</h4>
+                <p>Estudo de caso com foco em UI. O projeto é sobre um aplicativo de trilhas e lugares recreativos em ambientes naturais ao ar livre.</p>
+            </div>
+
+            <div class="case_block" id="persona">
+                <h4>Persona</h4>
+                <p>Foram criados duas personas com base no perfil demográfico de pessoas que frequentam trilhas ou que gostam de natureza mas que ainda não tiveram oportunidades de conhecer trilhas.</p>
+                <a class="img-link" href="../../assets/ux/trilheiros/Persona_1.jpg" target="_blank">
+                    <img src="../../assets/ux/trilheiros/Persona_1.jpg" alt="Persona 1">
+                </a>
+                <a class="img-link img-link-last" href="../../assets/ux/trilheiros/Persona_2.jpg" target="_blank">
+                    <img src="../../assets/ux/trilheiros/Persona_2.jpg" alt="Persona 2">
+                </a>
+            </div>
+
+            <div class="case_block" id="task_flow">
+                <h4>Task Flow</h4>
+                <p>A jornada do usuário dentro do aplicativo. Poderá criar uma conta ou entrar com uma já existente. Visualizar seus locais favoritos, os mais populares e explorar categorias. Menu para configurações da conta e do aplicativo. Informações detalhadas sobre o local, como fotos, rotas de trilhas, mapa de como chegar e avaliações, etc.</p>
+                <a class="img-link img-link-last" href="../../assets/ux/trilheiros/task_flow.jpg" target="_blank">
+                    <img src="../../assets/ux/trilheiros/task_flow.jpg" alt="task flow">
+                </a>
+            </div>
+
+            <div class="case_block" id="wireframes">
+                <h4>Wireframes</h4>
+                <p>Foi feito wireframes de baixo a media fidelidade seguindo o task flow.</p>
+                <a class="img-link img-link-last" href="../../assets/ux/trilheiros/wireframes.jpg" target="_blank">
+                    <img src="../../assets/ux/trilheiros/wireframes.jpg" alt="wireframes">
+                </a>
+            </div>
+
+            <div class="case_block" id="style_guide">
+                <h4>Style Guide</h4>
+                <p>Um guia de estilo para dar uma identidade a marca e todas as informações necessárias de design para o aplicativo ser desenvolvido.</p>
+
+                <div class="case_sub_block" id="cores">
+                    <h5>Cores</h5>
+                    <p>As cores utilizadas no design. O verde (Hunter Green) como a cor primária e de identidade da marca.</p>
+                    <a class="img-link img-link-last" href="../../assets/ux/trilheiros/cores.jpg" target="_blank">
+                        <img src="../../assets/ux/trilheiros/cores.jpg" alt="cores">
                     </a>
                 </div>
-                <div class="card-txt">
-                    <h3>UI concept 1</h3>
-                    <p>Em construção...</p>
+
+                <div class="case_sub_block" id="tipografia">
+                    <h5>Tipografia</h5>
+                    <p><strong>Roboto</strong> foi escolhido como a font para todo o aplicativo.</p>
+                    <a class="img-link img-link-last" href="../../assets/ux/trilheiros/typography.jpg" target="_blank">
+                        <img src="../../assets/ux/trilheiros/typography.jpg" alt="tipografia">
+                    </a>
+                </div>
+
+                <div class="case_sub_block" id="botoes_forms">
+                    <h5>Botões e Formulários</h5>
+                    <p>As variações de botões e formulários presentes no aplicativo. Foram criados como components no Figma.</p>
+                    <a class="img-link img-link-last" href="../../assets/ux/trilheiros/buttons_forms.jpg" target="_blank">
+                        <img src="../../assets/ux/trilheiros/buttons_forms.jpg" alt="botões e formulários">
+                    </a>
+                </div>
+
+                <div class="case_sub_block" id="grid">
+                    <h5>Grid</h5>
+                    <p>Foi utilizado grid de 8dp em 4 colunas, com margem de 24dp.</p>
+                    <a class="img-link img-link-last" href="../../assets/ux/trilheiros/grid.jpg" target="_blank">
+                        <img id="img-grid" src="../../assets/ux/trilheiros/grid.jpg" alt="grid">
+                    </a>
                 </div>
             </div>
-            <div class="portfolio-card">
-                <div class="card-img">
-                    <a href="#">
-                        <img src="../../assets/ux/ui1.jpg" alt="">
-                    </a>
-                </div>
-                <div class="card-txt">
-                    <h3>UI concept 2</h3>
-                    <p>Em construção...</p>
-                </div>
+
+            <div class="case_block" id="prototipo">
+                <h4>Protótipo</h4>
+                <p>Protótipo de alta-fidelidade. Foram feitas algumas alterações e melhorias em relação aos wireframes de baixa fidelidade para que o usuário chegue ao seu objetivo sem precisar passar por muitas telas.</p>
+                <a class="img-link img-link-last" href="../../assets/ux/trilheiros/prototype.jpg" target="_blank">
+                    <img src="../../assets/ux/trilheiros/prototype.jpg" alt="protótipo">
+                </a>
             </div>
-        </section> -->
-        <section class="portfolio-prototype">
-            <div class="portfolio-card">
-                <div class="card-img">
-                    <a href="trilheiros.html">
-                        <img src="../../assets/ux/prot3.jpg" alt="Capa do protótipo de baixa fidelidade de um app de vendas.">
-                    </a>
-                </div>
-                <div class="card-txt">
-                    <h3>Trilheiros</h3>
-                    <p>Projeto de UI sobre um aplicativo de trilhas.</p>
-                </div>
-            </div>
-            <div class="portfolio-card">
-                <div class="card-img">
-                    <a href="https://www.figma.com/proto/u8VI1D9UJQcxvBDYA9385j/pet_food_landing_page?page-id=0%3A1&node-id=6%3A253&viewport=241%2C48%2C0.07&scaling=min-zoom&starting-point-node-id=6%3A253" target="_blank">
-                        <img src="../../assets/ux/prot2.jpg" alt="Capa do protótipo de alta fidelidade de um site de vendas de rações.">
-                    </a>
-                </div>
-                <div class="card-txt">
-                    <h3>Pet Food</h3>
-                    <p>Protótipo de alta fidelidade de uma landing page de rações.</p>
-                </div>
-            </div>
-            <div class="portfolio-card">
-                <div class="card-img">
-                    <a href="https://www.figma.com/proto/eEj8pQ3n0pO1WepVpP1iKS/wireframe-01-Bastos-Coffee-Beans?page-id=0%3A1&node-id=1%3A7&viewport=241%2C48%2C0.33&scaling=scale-down&starting-point-node-id=1%3A7" target="_blank">
-                        <img src="../../assets/ux/prot1.jpg" alt="Capa do protótipo de baixa fidelidade de um app de vendas.">
-                    </a>
-                </div>
-                <div class="card-txt">
-                    <h3>Bastos Coffee Beans</h3>
-                    <p>Protótipo de baixa fidelidade de um app de vendas.</p>
-                </div>
+
+            <div class="case_block" id="interacao">
+                <h4>Interação</h4>
+                <p>Projeto final e pronto para testes.</p>
+                <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FQCl41juVryAI6owfrrVHAL%2FTrilheiros---Mobile-App%3Fpage-id%3D0%253A1%26node-id%3D88%253A863%26viewport%3D390%252C48%252C0.16%26scaling%3Dscale-down%26starting-point-node-id%3D88%253A908" allowfullscreen></iframe>
             </div>
         </section>
     </main>
@@ -192,14 +230,13 @@
                     <p>© 2022 Todos os direitos reservados. - Design e Código por Daniel Pontes</p>
                 </div>
             </div>
-            <!-- <div class="to-top-button">
-                <a class="to-top-link" href="#header">
-                    Ir para o topo
-                    <svg class="icon">
-                        <desc>Seta para cima</desc>
-                        <use xlink:href="#top"/>
-                    </svg>
-                </a>
+            <div class="to-top-button">
+                    <button onclick="topFunction()" id="topBtn" title="Ir para o topo">
+                        <svg class="icon">
+                            <desc>Seta para cima</desc>
+                            <use xlink:href="#top"/>
+                        </svg>
+                    </button>
                 <svg display="none">
                     <symbol viewBox="0 0 512 512" id="top">
                         <path d="M0,0v512h512V0H0z M356.416,228.416c-4.16,4.16-9.621,6.251-15.083,6.251c-5.461,0-10.923-2.091-15.083-6.251
@@ -209,10 +246,11 @@
                         C364.757,206.592,364.757,220.075,356.416,228.416z"/>
                     </symbol>
                 </svg>
-            </div> -->
+            </div>
         </section>
     </footer>
 	<script src="../../js/hamburger.js"></script>
+    <script src="../../js/top_btn.js"></script>
 	<script src="../../js/dark.js"></script>
 </body>
 </html>

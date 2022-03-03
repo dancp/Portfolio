@@ -1,73 +1,73 @@
 /* <--- MENU ---> */
-section.kurumins-menu {
+section.case_nav {
     width: 70%;
     margin: 0 auto;
     margin-bottom: 5vh;
 }
 
 @media screen and (max-width: 768px) {
-    section.kurumins-menu {
+    section.case_nav {
         width: 100%;
     }
 }
 
-section.kurumins-menu a {
+section.case_nav a {
     color: var(--cinza);
     text-decoration: none;
 }
 
-section.kurumins-menu a:hover {
+section.case_nav a:hover {
     color: var(--cor1);
     text-decoration: underline;
 }
 
-section.kurumins-menu strong {
+section.case_nav strong {
     font-weight: 600;
 }
 
-section.kurumins-menu li {
+section.case_nav li {
     color: var(--cinza);
     margin-left: .9rem;
 }
 
-section.kurumins-menu .sub-menu {
+section.case_nav .sub-menu {
     margin-left: .9rem;
 }
 
 /* <--- DESCOBERTA ---> */
-section.kurumins {
+section.case {
     width: 70%;
     margin: 0 auto;
 }
 
 @media screen and (max-width: 768px) {
-    section.kurumins {
+    section.case {
         width: 100%;
     }
 }
 
-section.kurumins h4 {
+section.case h4 {
     color: var(--sec);
     font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 1.5rem;
 }
 
-section.kurumins h5 {
+section.case h5 {
     color: var(--sec);
     font-size: 1.25rem;
     font-weight: 600;
     margin-bottom: 1.5rem;
 }
 
-section.kurumins p {
+section.case p {
     color: var(--sec);
     line-height: 1.5;
     text-align: left;
     margin-bottom: 1rem;
 }
 
-section.kurumins li {
+section.case li {
     color: var(--sec);
     line-height: 1.5;
     text-align: left;
@@ -75,7 +75,7 @@ section.kurumins li {
     margin-bottom: 1rem;
 }
 
-section.kurumins blockquote {
+section.case blockquote {
     background-color: #FAF9F6;
     text-align: left;
     line-height: 1.5;
@@ -92,11 +92,11 @@ section.kurumins blockquote {
 		0px 1px 3px 0px hsla(0,0%,0%,0.2);
 }
 
-section.kurumins strong {
+section.case strong {
     font-weight: 600;
 }
 
-section.kurumins img {
+section.case img {
     border-radius: 5px;
     width: 100%;
     height: 100%;
@@ -111,38 +111,48 @@ section.kurumins img {
 		0px 1px 3px 0px hsla(0,0%,0%,0.2);
 }
 
-section.kurumins img.img-home {
+section.case img.img-hover {
     margin: 0 auto;
     -webkit-transition-duration: 0.25s;
          -o-transition-duration: 0.25s;
             transition-duration: 0.25s;
 }
 
-section.kurumins img.img-home:hover {
+section.case img.img-hover:hover {
     -webkit-transform: scale(1.015);
         -ms-transform: scale(1.015);
             transform: scale(1.015);
 }
 
-section.kurumins a.img-link {
+section.case a.img-link {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     margin: 1.5rem auto;
 }
 
-section.kurumins a.img-link-last {
+section.case a.img-link-last {
     margin-bottom: 0;
 }
 
-section.kurumins .descoberta {
+section.case .case_block {
     margin-bottom: 4rem;
 }
 
-section.kurumins #benchmarking .bench-ong {
+section.case .case_sub_block {
     margin-top: 4rem;
 }
 
-section.kurumins #benchmarking .bench-ong li {
+section.case .case_sub_block li {
     margin-bottom: 2rem;
+}
+
+img#img-grid {
+    width: 50%;
+    height: 50%;
+}
+
+#interacao iframe {
+    width: 100%;
+    border-radius: 5px;
 }
