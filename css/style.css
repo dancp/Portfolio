@@ -996,7 +996,7 @@ section.sobre-mim p {
     margin-bottom: 5vh;
 }
 
-section.sobre-mim p:nth-of-type(3) {
+section.sobre-mim p:last-of-type {
     margin-bottom: 10vh;
 }
 
