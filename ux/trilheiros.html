@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
 
     <!-- HTML Meta Tags -->
-    <title>Daniel Pontes - Projeto UI Trilheiros</title>
+    <title>Daniel Pontes - Projeto Trilheiros</title>
     <meta name="description" content="Estudo de caso com foco em UI. O projeto é sobre um aplicativo de trilhas e lugares recreativos em ambientes naturais ao ar livre.">
     <meta name="author" content="Daniel Pontes">
     <meta name="keywords" content="UX, UI, Design, Designer, Front-end, HTML, CSS, JavaScript, Task Flow, Wireframe, Protótipo, Design System, Design Thinking, Double Diamond, Design Sprint, Lean Design, Atomic Design, Photoshop, GIMP, Illustrator, Inkscape, Adobe XD, Figma, Miro, Visual Studio Code, Git, Github, Gitlab, Linux, WSL, Windows, Portfolio">
@@ -15,7 +15,7 @@
     <meta itemprop="image" content="https://dancp.github.io/portfolio/assets/meta/trilheiros.jpg">
 
     <!-- Facebook Meta Tags -->
-    <meta property="og:url" content="https://dancp.github.io/portfolio/pages/ux/trilheiros.html">
+    <meta property="og:url" content="https://dancp.github.io/portfolio/ux/trilheiros.html">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Daniel Pontes - Projeto UI Trilheiros">
     <meta property="og:description" content="Estudo de caso com foco em UI. O projeto é sobre um aplicativo de trilhas e lugares recreativos em ambientes naturais ao ar livre.">
@@ -31,7 +31,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../../assets/favicon/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="../../css/style.css">
-    <link rel="stylesheet" type="text/css" href="../../css/kurumins.css">
 </head>
 <body>
     <header id="header">
@@ -43,10 +42,7 @@
                     <a href="../../index.html" class="nav-link">Página Inicial</a>
                 </li>
                 <li class="nav-item">
-                    <a href="ux.html" class="nav-link">UX Design</a>
-                </li>
-                <li class="nav-item">
-                    <a href="../frontend/frontend.html" class="nav-link">Front-end</a>
+                    <a href="portfolio.html" class="nav-link">Portfólio</a>
                 </li>
                 <li class="nav-item">
                     <a href="../../sobre.html" class="nav-link">Sobre mim</a>
@@ -68,8 +64,8 @@
             </label>
         </div>
         <section class="portfolio-title">
-            <h1>Projeto UI Trilheiros</h1>
-            <h2>Projeto de UI de um aplicativo de trilhas e lazer.</h2>
+            <h1>Projeto Trilheiros</h1>
+            <h2>Projeto de UI para um aplicativo de trilhas.</h2>
         </section>
         <section class="case_nav">
             <ul>
@@ -80,7 +76,10 @@
                     <a href="#persona"><strong>Persona</strong></a>
                 </li>
                 <li>
-                    <a href="#task_flow"><strong>Task Flow</strong></a>
+                    <a href="#user_flow"><strong>User Flow</strong></a>
+                </li>
+                <li>
+                    <a href="#lowfi"><strong>Low-fidelity Prototype</strong></a>
                 </li>
                 <li>
                     <a href="#style_guide"><strong>Style Guide</strong></a>
@@ -89,33 +88,33 @@
                             <a href="#cores">Cores</a>
                         </li>
                         <li class="sub-menu">
-                            <a href="#tipografia">Tipografia</a>
+                            <a href="#typography">Typography</a>
                         </li>
                         <li class="sub-menu">
                             <a href="#botoes_forms">Botões e Formulários</a>
                         </li>
                         <li class="sub-menu">
-                            <a href="#grid">Grid</a>
+                            <a href="#grids">Grids</a>
                         </li>
                     </ul>
                 </li>
                 <li>
-                    <a href="#prototipo"><strong>Protótipo</strong></a>
+                    <a href="#hifi"><strong>High-fidelity Prototype</strong></a>
                 </li>
                 <li>
-                    <a href="#interacao"><strong>Interação</strong></a>
+                    <a href="#resultado"><strong>Resultado</strong></a>
                 </li>
             </ul>
         </section>
         <section class="case">
             <div class="case_block" id="o_projeto">
                 <h4>O Projeto</h4>
-                <p>Estudo de caso com foco em UI. O projeto é sobre um aplicativo de trilhas e lugares recreativos em ambientes naturais ao ar livre.</p>
+                <p>O projeto é sobre um aplicativo de trilhas e lugares recreativos em ambientes naturais ao ar livre. O projeto nasceu por conta da ausência de aplicativos do tipo no mercado.</p>
             </div>
 
             <div class="case_block" id="persona">
                 <h4>Persona</h4>
-                <p>Foram criados duas personas com base no perfil demográfico de pessoas que frequentam trilhas ou que gostam de natureza mas que ainda não tiveram oportunidades de conhecer trilhas.</p>
+                <p>Com base em Desk Research, foram criados duas personas seguindo o perfil demográfico de pessoas que frequentam trilhas ou que gostam de natureza mas que ainda não tiveram oportunidades de conhecer trilhas.</p>
                 <a class="img-link" href="../../assets/ux/trilheiros/Persona_1.jpg" target="_blank">
                     <img src="../../assets/ux/trilheiros/Persona_1.jpg" alt="Persona 1">
                 </a>
@@ -124,17 +123,17 @@
                 </a>
             </div>
 
-            <div class="case_block" id="task_flow">
-                <h4>Task Flow</h4>
-                <p>A jornada do usuário dentro do aplicativo. Poderá criar uma conta ou entrar com uma já existente. Visualizar seus locais favoritos, os mais populares e explorar categorias. Menu para configurações da conta e do aplicativo. Informações detalhadas sobre o local, como fotos, rotas de trilhas, mapa de como chegar e avaliações, etc.</p>
+            <div class="case_block" id="user_flow">
+                <h4>User Flow</h4>
+                <p>O objetivo foi que o usuário consiga informações de forma simples e rápida, mas que também tenha opções de encontrar informações mais detalhas se assim desejar. Poderá criar uma conta, entrar com uma já existente ou encontrar informações mesmo sem criar uma conta. Visualizar seus locais favoritos, os mais populares e explorar categorias. Menu para configurações da conta e do aplicativo. Informações detalhadas sobre o local, como fotos, rotas de trilhas, mapa de como chegar, avaliações, etc.</p>
                 <a class="img-link img-link-last" href="../../assets/ux/trilheiros/task_flow.jpg" target="_blank">
                     <img src="../../assets/ux/trilheiros/task_flow.jpg" alt="task flow">
                 </a>
             </div>
 
-            <div class="case_block" id="wireframes">
-                <h4>Wireframes</h4>
-                <p>Foi feito wireframes de baixo a media fidelidade seguindo o task flow.</p>
+            <div class="case_block" id="lowfi">
+                <h4>Low-fidelity Prototype</h4>
+                <p>Protótipo de baixa a media fidelidade com base do que foi proposto no user flow.</p>
                 <a class="img-link img-link-last" href="../../assets/ux/trilheiros/wireframes.jpg" target="_blank">
                     <img src="../../assets/ux/trilheiros/wireframes.jpg" alt="wireframes">
                 </a>
@@ -142,19 +141,19 @@
 
             <div class="case_block" id="style_guide">
                 <h4>Style Guide</h4>
-                <p>Um guia de estilo para dar uma identidade a marca e todas as informações necessárias de design para o aplicativo ser desenvolvido.</p>
+                <p>Proposta de identidade da marca e todas as informações necessárias de design para que o aplicativo possa ser desenvolvido.</p>
 
                 <div class="case_sub_block" id="cores">
                     <h5>Cores</h5>
-                    <p>As cores utilizadas no design. O verde (Hunter Green) como a cor primária e de identidade da marca.</p>
+                    <p>As cores utilizadas no design, seguindo regras de contraste para uma melhor acessibilidade. O verde (Hunter Green) como a cor primária e de identidade da marca.</p>
                     <a class="img-link img-link-last" href="../../assets/ux/trilheiros/cores.jpg" target="_blank">
                         <img src="../../assets/ux/trilheiros/cores.jpg" alt="cores">
                     </a>
                 </div>
 
-                <div class="case_sub_block" id="tipografia">
-                    <h5>Tipografia</h5>
-                    <p><strong>Roboto</strong> foi escolhido como a font para todo o aplicativo.</p>
+                <div class="case_sub_block" id="typography">
+                    <h5>Typography</h5>
+                    <p><strong>Roboto</strong> foi escolhido como a font para todo o aplicativo. Configurações de line height e letter spacing levando em consideração uma melhor legibilidade e leiturabilidade.</p>
                     <a class="img-link img-link-last" href="../../assets/ux/trilheiros/typography.jpg" target="_blank">
                         <img src="../../assets/ux/trilheiros/typography.jpg" alt="tipografia">
                     </a>
@@ -162,31 +161,31 @@
 
                 <div class="case_sub_block" id="botoes_forms">
                     <h5>Botões e Formulários</h5>
-                    <p>As variações de botões e formulários presentes no aplicativo. Foram criados como components no Figma.</p>
+                    <p>Variações de botões e formulários presentes no aplicativo. Criados em components como parte do Design System.</p>
                     <a class="img-link img-link-last" href="../../assets/ux/trilheiros/buttons_forms.jpg" target="_blank">
                         <img src="../../assets/ux/trilheiros/buttons_forms.jpg" alt="botões e formulários">
                     </a>
                 </div>
 
-                <div class="case_sub_block" id="grid">
-                    <h5>Grid</h5>
-                    <p>Foi utilizado grid de 8dp em 4 colunas, com margem de 24dp.</p>
+                <div class="case_sub_block" id="grids">
+                    <h5>Grids</h5>
+                    <p>Foi utilizado grids em 8dp e divididos em 4 colunas, com margem de 24dp em cada lado.</p>
                     <a class="img-link img-link-last" href="../../assets/ux/trilheiros/grid.jpg" target="_blank">
                         <img id="img-grid" src="../../assets/ux/trilheiros/grid.jpg" alt="grid">
                     </a>
                 </div>
             </div>
 
-            <div class="case_block" id="prototipo">
-                <h4>Protótipo</h4>
-                <p>Protótipo de alta-fidelidade. Foram feitas algumas alterações e melhorias em relação aos wireframes de baixa fidelidade para que o usuário chegue ao seu objetivo sem precisar passar por muitas telas.</p>
+            <div class="case_block" id="hifi">
+                <h4>High-fidelity Prototype</h4>
+                <p>Protótipo de alta-fidelidade. Foram feitas algumas alterações e melhorias em relação ao protótipo de baixa fidelidade para que o usuário chegue ao seu objetivo passando por menos telas.</p>
                 <a class="img-link img-link-last" href="../../assets/ux/trilheiros/prototype.jpg" target="_blank">
                     <img src="../../assets/ux/trilheiros/prototype.jpg" alt="protótipo">
                 </a>
             </div>
 
-            <div class="case_block" id="interacao">
-                <h4>Interação</h4>
+            <div class="case_block" id="resultado">
+                <h4>Resultado</h4>
                 <p>Projeto final e pronto para testes.</p>
                 <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FQCl41juVryAI6owfrrVHAL%2FTrilheiros---Mobile-App%3Fpage-id%3D0%253A1%26node-id%3D88%253A863%26viewport%3D390%252C48%252C0.16%26scaling%3Dscale-down%26starting-point-node-id%3D88%253A908" allowfullscreen></iframe>
             </div>
@@ -249,7 +248,7 @@
                     </symbol>
                 </svg>
                 <div class="copyright">
-                    <p>© 2022 Todos os direitos reservados. - Design e Código por Daniel Pontes</p>
+                    <p>© 2022 Todos os direitos reservados. Design e Código por Daniel Pontes.</p>
                 </div>
             </div>
             <div class="to-top-button">
